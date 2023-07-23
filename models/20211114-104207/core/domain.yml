@@ -1,0 +1,303 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- small-duration:
+    use_entities: true
+- long-duration:
+    use_entities: true
+- age-below-18:
+    use_entities: true
+- age-above-18:
+    use_entities: true
+- problem_common-cold:
+    use_entities: true
+- problem_conjunctivits:
+    use_entities: true
+- problem_gerd:
+    use_entities: true
+- problem_diabetes:
+    use_entities: true
+- problem_allergy-rhinitis:
+    use_entities: true
+- problem_fungal-infection:
+    use_entities: true
+- problem_chickenpox:
+    use_entities: true
+- problem_typhoid:
+    use_entities: true
+- problem_psoriasis:
+    use_entities: true
+- problem_obesity:
+    use_entities: true
+- problem_insomnia:
+    use_entities: true
+- problem_psychosis:
+    use_entities: true
+- problem_depression:
+    use_entities: true
+- problem_pneumonia:
+    use_entities: true
+- problem_bronchial-asthma:
+    use_entities: true
+- problem_corona-virus:
+    use_entities: true
+- problem_low-blood-pressure:
+    use_entities: true
+- problem_high-blood-pressure:
+    use_entities: true
+- problem_ringworm:
+    use_entities: true
+- problem_toothache:
+    use_entities: true
+- problem_migraine:
+    use_entities: true
+- problem_arthritis:
+    use_entities: true
+- problem_period-cramps:
+    use_entities: true
+- problem_vit-d-deficiency:
+    use_entities: true
+- problem_anaemia:
+    use_entities: true
+- problem_weakness:
+    use_entities: true
+- problem_eye-problem:
+    use_entities: true
+- problem_ear-pain:
+    use_entities: true
+- problem_night-blindness:
+    use_entities: true
+- problem_mild-heart-disease:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hii! I am medicbot, your healthcare assistant. How can I help you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask-cold:
+  - text: Are you feeling cold?
+  utter_ask-nasal-blockage:
+  - text: Do you have nasal Blockage?
+  utter_ask-duration:
+  - text: Duration of your prevailing symptoms
+    buttons:
+    - title: Less than 3 days
+      payload: /small-duration
+    - title: 3 days or more
+      payload: /long-duration
+  utter_ask-age:
+  - text: Which age group you belong too
+    buttons:
+    - title: below 18
+      payload: /age-below-18
+    - title: above 18
+      payload: /age-above-18
+  utter_visit-doctor:
+  - text: Please visit a hospital
+  utter_common-cold-a:
+  - text: You have a cold. You should take a 5mg dosage of Cetrizine after your dinner, if the problem persists, do visit a doctor.
+  utter_common-cold-b:
+  - text: You have a cold. You should take a 10mg dosage of Cetrizine after your dinner, if the problem persists, do visit a doctor.
+  utter_common-cold-advice:
+  - text: common-cold advice here.
+  utter_anything-else:
+  - text: Is there anything else I can help you with?
+  utter_low-blood-pressure-a:
+  - text: You have low BP. You should take 7mg dosage of  midodrine (Orvaten) for every 8 hours, it helps to narrow blood vessels to raise blood pressure, do visit a doctor.
+  utter_low-blood-pressure-b:
+  - text: You have low BP. You should take 10mg dosage of midodrine (Orvaten) for every 8 hours, it helps to narrow blood vessels to raise blood pressure, do visit a doctor.
+  utter_low-blood-pressure-advice:
+  - text: Drink plenty of water, eat a balanced diet, eat smaller meals, avoid alcohol, check your blood sugar several times a day consult doctor incase of emergency.
+  utter_high-blood-pressure-a:
+  - text: You have high BP. You should take 5mg dosage of Lisinopril (Prinivil, Zestril) is an ACE inhibitor. Take it after having lunch.  You should take once a day. Do visit a doctor.
+  utter_high-blood-pressure-b:
+  - text: You have high BP. You should take 10mg dosage of Lisinopril (Prinivil, Zestril) is an ACE inhibitor. Take it after having lunch.  You should take once a day. Do visit a doctor.
+  utter_high-blood-pressure-advice:
+  - text: Exercise regularly, loose extra weight, eat a healthy diet, reduce sodium in your diet, quit smoking, limit or avoid alcohol consumption.
+  utter_ringworm-a:
+  - text: You have ringworm. You should apply lotrimin ointment on the infected area , do visit a doctor.
+  utter_ringworm-b:
+  - text: You have ringworm. You should apply lotrimin ointment on the infected area , do visit a doctor.
+  utter_ringworm-advice:
+  - text: Wash the infected area regularly. Don’t use wet clothes.
+  utter_toothache-a:
+  - text: You have toothache. You should take one tablet of Diclofenac when you get pain , do visit a doctor.
+  utter_toothache-b:
+  - text: You have toothache. You should take one tablet of Diclofenac when you get pain, do visit a doctor.
+  utter_toothache-advice:
+  - text: rinse your mouth with warm water. Use dental floss to remove any food particles or plaque wedged between your teeth.
+  utter_migraine-a:
+  - text: You have migraine. You should take 25mg dosage of sumatriptan when you get pain , do visit a doctor.
+  utter_migraine-b:
+  - text: You have migrane. You should take 50mg dosage of sumatriptan when you get pain, do visit a doctor.
+  utter_migraine-advice:
+  - text: try a cold pack, get some caffeine, practice relaxation.
+  utter_conjunctivits-a:
+  - text: You have conjunctivitis. Take gatifloxacin (Zymaxid) 2 drops twice a day, do visit a doctor.
+  utter_conjunctivits-b:
+  - text: You have conjunctivitis. Take ciprofloxacin 2 drops thrice a day, do visit a doctor.
+  utter_conjunctivits-advice:
+  - text: Avoiding contact with infected people, disinfection of household surfaces, and good hygienic practices.
+  utter_gerd-a:
+  - text: You have gerd. Take antacids to reduce pepsids. Take PPIs eg esomeprazole (Nexium) omeprazole (Prilosec) lansoprazole (Prevacid) for long terms 2 dozes daily, do visit a doctor.
+  utter_gerd-b:
+  - text: You have gerd. Take famotidine (Pepcid) and nizatidine 10mg tablets twice a day, do visit a doctor.
+  utter_gerd-advice:
+  - text: If not taken care by medications, consult for surgery like LINX or TIF.
+  utter_diabetes-a:
+  - text: You have diabetes. Take 5-6 mg dozes of metformin (Glumetza, others), liraglutide (Victoza) and insulin daily basis, do visit a doctor.
+  utter_diabetes-b:
+  - text: You have diabetes. Take 2-5mg of glimepiride (Amaryl), glimepiride-pioglitazone (Duetact) dozes daily, do visit a doctor.
+  utter_diabetes-advice:
+  - text: Choose healthier carbohydrates, Eat less salt, Eat more fruits, Cut down sugar.
+  utter_fungal-infection-a:
+  - text: You have fungal infection. Take 5-10mg of 1% cream Terbinafine 1 or 2 times a day, or nystalin ointment once a day, do visit a doctor.
+  utter_fungal-infection-b:
+  - text: You have fungal infection. Have 1-2 dozes of any of clotrimazole, econazole, ketoconazole, do visit a doctor.
+  utter_fungal-infection-advice:
+  - text: Keep the affected area clean and dry. wearing loose-fitting clothing or shoes that allow your skin to breathe
+  utter_chickenpox-a:
+  - text: You have chickenpox. Take 10mg tablets daily acyclovir eg Sitavig 1doze daily, do visit a doctor.
+  utter_chickenpox-b:
+  - text: You have chickenpox. Take 5mg tablets of Zovirax, apply calamine lotion 2mg daily, do visit a doctor.
+  utter_chickenpox-advice:
+  - text: Wear mittens to prevent scratching, Take baking soda baths, Use chamomile compresses, Have approved pain relievers
+  utter_typhoid-a:
+  - text: You have typhoid. azithromycin given for 7 days at a dosage of 10 mg/kg/day, maximum 500mg a day, do visit a doctor.
+  utter_typhoid-b:
+  - text: You have typhoid. Take 2-3mg tablets Ciprofloxacin (Cipro), Azithromycin (Zithromax) or Ceftriaxone on daily basis a little amount, do visit a doctor.
+  utter_typhoid-advice:
+  - text: Take antibiotic, drinking adequate water. Consult a doctor
+  utter_psoriasis-a:
+  - text: You have psoriasis. Take 2-3mg dozes Anthralin, , Coal tar daily, do visit a doctor.
+  utter_psoriasis-b:
+  - text: You have psoriasis. Have Calcipotriene (a form of vitamin D) 10mg daily, do visit a doctor.
+  utter_psoriasis-advice:
+  - text: You can apply cream, lotion, or ointments. use cream with clobetasol
+  utter_obesity-a:
+  - text: You have obesity. Orlistat is most used medicine with 10-15mg dozes daily, do visit a doctor.
+  utter_obesity-b:
+  - text: You have obesity. Take Orlistat (Alli, Xenical) Phentermine and topiramate (Qsymia), Bupropion and naltrexone (Contrave), Liraglutide (Saxenda, Victoza) 1doze daily, do visit a doctor.
+  utter_obesity-advice:
+  - text: Do exercise and yoga. Have medications and consult for weight loss surgery.
+  utter_insomnia-a:
+  - text: You have insomnia. Take Antihistamines like diphenhydramine (Nytol, Sominex) of 2-3mg, 2doze daily, do visit a doctor.
+  utter_insomnia-b:
+  - text: You have insomnia. Have 3.75mg dozes daily of sleeping pills, do visit a doctor.
+  utter_insomnia-advice:
+  - text: Wake up at the same time, Limit naps, Eliminate alcohol.
+  utter_psychosis-a:
+  - text: You have psychosis. Take atypical mild 1-2 dozes antipsychotics, which include aripiprazole (Abilify), asenapine (Saphris), clozapine (Clozaril) 4mg daily, do visit a doctor.
+  utter_psychosis-b:
+  - text: You have psychosis. Have 2-3mg dozes Antipsychotic drugs like olanzapine and risperidone 10mg dozes daily, do visit a doctor.
+  utter_psychosis-advice:
+  - text: Don't panic or overreact, Do listen non-judgmentally.
+  utter_depression-a:
+  - text: You have depression. Take 15-20mg of fluoxetine (Prozac™) is most effective, with 5mg dozes daily basis, do visit a doctor.
+  utter_depression-b:
+  - text: You have depression. Take 1tablet of sertraline (Zoloft), fluoxetine (Prozac, Sarafem), citalopram (Celexa) 10-15mg dozes daily, do visit a doctor.
+  utter_depression-advice:
+  - text: Blend of cognitive behavioral therapy, interpersonal therapy, and psychodynamic therapy can be used.
+  utter_pneumonia-a:
+  - text: You have pneumonia. Take Beta-lactam antibiotics (eg, amoxicillin, cefuroxime, cefdinir) 10-15mg daily, do visit a doctor.
+  utter_pneumonia-b:
+  - text: You have pneumonia. Take 10-12mg dozes daily Macrolides include azithromycin (Zithromax®) and clarithromycin (Biaxin®), do visit a doctor.
+  utter_pneumonia-advice:
+  - text: You can try  amoxicillin, azithromycin, or fluoroquinolones too.
+  utter_coronavirus-advice:
+  - text: you have symptopms of covid-19. Reach out to your nearest hostpital and get checked for covid-19. Maintain distance of atleast 6ft from others.
+  utter_bronchial-asthma-a:
+  - text: You have bronchial asthma. Inhale Albuterol, USP Inhalation Aerosol when you are going to be around asthma triggers. Do visit a doctor.
+  utter_bronchial-asthma-b:
+  - text: You have bronchial asthma. Inhale Albuterol, USP Inhalation Aerosol when you are going to be around asthma triggers. Do visit a doctor.
+  utter_bronchial-asthma-advice:
+  - text: Keep fit by exercising. Be in control, get an asthma action plan. Avoid smoking. Prevent Cold.
+  utter_arthritis-a:
+  - text: You have arthritis.Take one pill of Rinvoq(15 mg tablet) daily . Do visit a doctor.
+  utter_arthritis-b:
+  - text: You have arthritis.Take one pill of Rinvoq(15 mg tablet) daily . Do visit a doctor.
+  utter_arthritis-advice:
+  - text: Manage your weight. Use hot and cold therapy. Use meditation to cope with pain. Add turmeric to dishes.
+  utter_period-cramps-a:
+  - text: Take ibuprofen tablet at regular doses starting the day before you expect your period to begin
+  utter_period-cramps-b:
+  - text: Take ibuprofen tablet at regular doses starting the day before you expect your period to begin
+  utter_period-cramps-advice:
+  - text: Keep a warm heating pad on belly. Do yoga for period cramps
+  utter_allergy-a:
+  - text: You have allergy, You should take anti-histamine tablet once daily until cured.
+  utter_allergy-b:
+  - text: You have allergy, You should take anti-histamine tablet twice daily until cured.
+  utter_allergy-advice:
+  - text: Try to figure out what causes your allergy and stay away from those substances
+  utter_anaemia-a:
+  - text: You have anaemia, Please take Lupinfer 50mg twice daily after food and take dexorange syrup twice daily
+  utter_anaemia-b:
+  - text: You have anaemia, Please take Lupinfer 100mg twice daily after food and take dexorange syrup twice daily
+  utter_anaemia-advice:
+  - text: Eat healthy food, check haemoglobin level in every six month
+  utter_weakness-a:
+  - text: Take a multi-vitamin syrup once a day, check your haemoglobin level, if necessary visit a doctor
+  utter_weakness-b:
+  - text: Take a multi-vitamin capsule twice a day, check your haemoglobin level, if necessary visit a doctor
+  utter_weakness-advice:
+  - text: Have a balanced diet, do yoga in the morning, get proper sleep
+  utter_eye-problem-a:
+  - text: Lower your screen time and immediatly get your eyes tested
+  utter_eye-problem-b:
+  - text: Lower your screen time and immediatly get your eyes tested, use itone eye drop twice a day
+  utter_eye-problem-advice:
+  - text: Do not spend much screen time, wash eyes frequently with clean water, do some yoga for eyes
+  utter_ear-pain-a:
+  - text: Do not use earphones for longer time, if it's bleeding go to a doctor
+  utter_ear-pain-b:
+  - text: Do not use earphones for longer time, you may use otovin ear drop. If pains a lot, take one aspirin tablet, if it's bleeding go to a doctor
+  utter_ear-pain-advice:
+  - text: Use less earphone, use a warm, moist compress on the ear.
+  utter_night-blindness-a:
+  - text: You have symptoms of night Blindness. Take aquasol A once a day for one month
+  utter_night-blindness-b:
+  - text: You have symptoms of night Blindness. Take aquasol A twice daily for one month
+  utter_night-blindness-advice:
+  - text: Eat vitamin A-rich foods including dark green leafy vegetables, carrots, potatoes, dairy products, broccoli, squash, and fish
+  utter_mild-heart-disease-a:
+  - text: Take one aspirin tablet quickly and go to the nearest hospital
+  utter_mild-heart-disease-b:
+  - text: Take one aspirin tablet quickly and go to the nearest hospital as soon as possible
+  utter_mild-heart-disease-advice:
+  - text: You have heart disease, Stop smoking, control blood pressure, control cholesterol levels, check for diabetes, eat a heart-healthy diet, control your stress level.
+  utter_vit-d-deficiency-a:
+  - text: you have vitaminD deficeincy. You should take vitamin D tablet once a week
+  utter_vit-d-deficiency-b:
+  - text: you have vitaminD deficeincy. You should take vitamin D tablet once a week
+  utter_vit-d-deficiency-advice:
+  - text: Please get sunlight for at least half an hour day to get proper vitamin D
+actions: []
+forms: {}
+e2e_actions: []

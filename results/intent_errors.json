@@ -1,0 +1,146 @@
+[
+  {
+    "text": "yes",
+    "intent": "symptom-yes",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4481491446495056
+    }
+  },
+  {
+    "text": "no",
+    "intent": "symptom-no",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9568740725517273
+    }
+  },
+  {
+    "text": "nope",
+    "intent": "symptom-no",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7016791701316833
+    }
+  },
+  {
+    "text": "never",
+    "intent": "symptom-no",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8700142502784729
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6802396774291992
+    }
+  },
+  {
+    "text": "yup",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "symptom-yes",
+      "confidence": 0.5801115036010742
+    }
+  },
+  {
+    "text": "n",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "symptom-no",
+      "confidence": 0.6905766129493713
+    }
+  },
+  {
+    "text": "nah",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "symptom-no",
+      "confidence": 0.6034093499183655
+    }
+  },
+  {
+    "text": "18-",
+    "intent": "age-below-18",
+    "intent_prediction": {
+      "name": "age-above-18",
+      "confidence": 0.6437729001045227
+    }
+  },
+  {
+    "text": "wheezing and shortness of breath",
+    "intent": "problem_cough",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.7645514011383057
+    }
+  },
+  {
+    "text": "i have fever",
+    "intent": "problem_common-cold",
+    "intent_prediction": {
+      "name": "problem_typhoid",
+      "confidence": 0.4832266569137573
+    }
+  },
+  {
+    "text": "i feel tired",
+    "intent": "problem_diabetes",
+    "intent_prediction": {
+      "name": "problem_low-blood-pressure",
+      "confidence": 0.48071426153182983
+    }
+  },
+  {
+    "text": "I am having high blood pressure",
+    "intent": "problem_obesity",
+    "intent_prediction": {
+      "name": "problem_high-blood-pressure",
+      "confidence": 0.8523367643356323
+    }
+  },
+  {
+    "text": "i am not able to breathe properly",
+    "intent": "problem_bronchial-asthma",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.5581149458885193
+    }
+  },
+  {
+    "text": "depression",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.70875483751297
+    }
+  },
+  {
+    "text": "i am having hallucinations",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_psychosis",
+      "confidence": 0.48431330919265747
+    }
+  },
+  {
+    "text": "my ears are ringing",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_ear-pain",
+      "confidence": 0.5478697419166565
+    }
+  },
+  {
+    "text": "i am feeling dizzy",
+    "intent": "problem_weakness",
+    "intent_prediction": {
+      "name": "problem_high-blood-pressure",
+      "confidence": 0.5710515379905701
+    }
+  }
+]

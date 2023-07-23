@@ -1,0 +1,2162 @@
+[
+  {
+    "text": "good night",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.31236007809638977
+    }
+  },
+  {
+    "text": "till next time",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.3543633818626404
+    }
+  },
+  {
+    "text": "go to bed",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8548608422279358
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.44764843583106995
+    }
+  },
+  {
+    "text": "question",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.6778005361557007
+    }
+  },
+  {
+    "text": "want to consult with please help me urgently",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.9594330787658691
+    }
+  },
+  {
+    "text": "I want you to answer me",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.6160363554954529
+    }
+  },
+  {
+    "text": "answer the question",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.6417330503463745
+    }
+  },
+  {
+    "text": "just answer the question",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.692635715007782
+    }
+  },
+  {
+    "text": "answering questions",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.737479031085968
+    }
+  },
+  {
+    "text": "tum to bade heavy chatbot ho",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.26069241762161255
+    }
+  },
+  {
+    "text": "i will destroy this planet",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.23040364682674408
+    }
+  },
+  {
+    "text": "we are venom",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "long-duration",
+      "confidence": 0.2398723065853119
+    }
+  },
+  {
+    "text": "a fd d f sd f sd s sd d d dw",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "problem_vit-d-deficiency",
+      "confidence": 0.6810699701309204
+    }
+  },
+  {
+    "text": "yup",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.24762210249900818
+    }
+  },
+  {
+    "text": "2 days",
+    "intent": "small-duration",
+    "intent_prediction": {
+      "name": "long-duration",
+      "confidence": 0.5785934925079346
+    }
+  },
+  {
+    "text": "18-",
+    "intent": "age-below-18",
+    "intent_prediction": {
+      "name": "small-duration",
+      "confidence": 0.5422396659851074
+    }
+  },
+  {
+    "text": "i am adult",
+    "intent": "age-above-18",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.23258081078529358
+    }
+  },
+  {
+    "text": "runny nose",
+    "intent": "problem_nasal-blockage",
+    "intent_prediction": {
+      "name": "problem_common-cold",
+      "confidence": 0.8634783625602722
+    }
+  },
+  {
+    "text": "regurgitation of food",
+    "intent": "problem_gerd",
+    "intent_prediction": {
+      "name": "problem_fungal-infection",
+      "confidence": 0.5331123471260071
+    }
+  },
+  {
+    "text": "exhausted",
+    "intent": "problem_diabetes",
+    "intent_prediction": {
+      "name": "problem_weakness",
+      "confidence": 0.7173128128051758
+    }
+  },
+  {
+    "text": "i get exhausted in little amount of work",
+    "intent": "problem_diabetes",
+    "intent_prediction": {
+      "name": "problem_gerd",
+      "confidence": 0.35376816987991333
+    }
+  },
+  {
+    "text": "i am having itching",
+    "intent": "problem_fungal-infection",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.8253512382507324
+    }
+  },
+  {
+    "text": "I always feel itching",
+    "intent": "problem_chickenpox",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.4379551112651825
+    }
+  },
+  {
+    "text": "I always feel fatigue",
+    "intent": "problem_chickenpox",
+    "intent_prediction": {
+      "name": "problem_low-blood-pressure",
+      "confidence": 0.6840914487838745
+    }
+  },
+  {
+    "text": "high fever",
+    "intent": "problem_typhoid",
+    "intent_prediction": {
+      "name": "problem_common-cold",
+      "confidence": 0.3293473720550537
+    }
+  },
+  {
+    "text": "I am having belly pain",
+    "intent": "problem_typhoid",
+    "intent_prediction": {
+      "name": "problem_obesity",
+      "confidence": 0.6340722441673279
+    }
+  },
+  {
+    "text": "I am having pain in my belly",
+    "intent": "problem_typhoid",
+    "intent_prediction": {
+      "name": "problem_obesity",
+      "confidence": 0.3255169987678528
+    }
+  },
+  {
+    "text": "I am having pain in my joints",
+    "intent": "problem_psoriasis",
+    "intent_prediction": {
+      "name": "problem_arthritis",
+      "confidence": 0.7157360315322876
+    }
+  },
+  {
+    "text": "I not feel refreshed when you get up",
+    "intent": "problem_insomnia",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.2941429316997528
+    }
+  },
+  {
+    "text": "Getting delusions lately",
+    "intent": "problem_psychosis",
+    "intent_prediction": {
+      "name": "problem_obesity",
+      "confidence": 0.4153279960155487
+    }
+  },
+  {
+    "text": "i am always angry",
+    "intent": "problem_psychosis",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.6851674318313599
+    }
+  },
+  {
+    "text": "I feel anxiety very much",
+    "intent": "problem_depression",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.1973227709531784
+    }
+  },
+  {
+    "text": "I am having greenish cough",
+    "intent": "problem_pneumonia",
+    "intent_prediction": {
+      "name": "problem_arthritis",
+      "confidence": 0.39443349838256836
+    }
+  },
+  {
+    "text": "Having fever and shaking chills",
+    "intent": "problem_pneumonia",
+    "intent_prediction": {
+      "name": "problem_typhoid",
+      "confidence": 0.8861258029937744
+    }
+  },
+  {
+    "text": "i am wheezing more due to cough and cold",
+    "intent": "problem_bronchial-asthma",
+    "intent_prediction": {
+      "name": "problem_cough",
+      "confidence": 0.8565399050712585
+    }
+  },
+  {
+    "text": "i am having very high fever",
+    "intent": "problem_coronavirus",
+    "intent_prediction": {
+      "name": "problem_typhoid",
+      "confidence": 0.7687444090843201
+    }
+  },
+  {
+    "text": "blurred vision",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "age-below-18",
+      "confidence": 0.19979365170001984
+    }
+  },
+  {
+    "text": "rapid, shallow breathing",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_pneumonia",
+      "confidence": 0.9182156324386597
+    }
+  },
+  {
+    "text": "i am having chest pain",
+    "intent": "problem_high-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.87229984998703
+    }
+  },
+  {
+    "text": "pounding in chest, neck or ears",
+    "intent": "problem_high-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_mild-heart-disease",
+      "confidence": 0.5312033891677856
+    }
+  },
+  {
+    "text": "red, scaly, cracked skin",
+    "intent": "problem_ringworm",
+    "intent_prediction": {
+      "name": "problem_fungal-infection",
+      "confidence": 0.9661995768547058
+    }
+  },
+  {
+    "text": "hair loss",
+    "intent": "problem_ringworm",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.3028795123100281
+    }
+  },
+  {
+    "text": "i have scaly, itchy, red, circular bald spot",
+    "intent": "problem_ringworm",
+    "intent_prediction": {
+      "name": "problem_fungal-infection",
+      "confidence": 0.273952454328537
+    }
+  },
+  {
+    "text": "extrmely painful headache",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_headache",
+      "confidence": 0.8872699737548828
+    }
+  },
+  {
+    "text": "i have tunnel vision",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "age-below-18",
+      "confidence": 0.22079205513000488
+    }
+  },
+  {
+    "text": "my ears are ringing",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_ear-pain",
+      "confidence": 0.9768107533454895
+    }
+  },
+  {
+    "text": "tell me something",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "problem_gerd",
+      "confidence": 0.8315695524215698
+    }
+  },
+  {
+    "text": "yes i have a question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.5700293183326721
+    }
+  },
+  {
+    "text": "want to ask",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.7314881682395935
+    }
+  },
+  {
+    "text": "ask",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.9128279089927673
+    }
+  },
+  {
+    "text": "answer",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.6888353824615479
+    }
+  },
+  {
+    "text": "can you answer me",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.649756669998169
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9876254200935364
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8799412846565247
+    }
+  },
+  {
+    "text": "lovely day isn't it",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.47619912028312683
+    }
+  },
+  {
+    "text": "cheers",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.31428930163383484
+    }
+  },
+  {
+    "text": "thanks a lot",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7523490190505981
+    }
+  },
+  {
+    "text": "leave me alone",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.17063990235328674
+    }
+  },
+  {
+    "text": "of course",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.41680923104286194
+    }
+  },
+  {
+    "text": "bye",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9981333613395691
+    }
+  },
+  {
+    "text": "No  Bye",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5777834057807922
+    }
+  },
+  {
+    "text": "answer it",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.5838364362716675
+    }
+  },
+  {
+    "text": "I want you to answer my question",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.5998408198356628
+    }
+  },
+  {
+    "text": "can you answer a question for me",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.5405908823013306
+    }
+  },
+  {
+    "text": "I want the answer now",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.7778031229972839
+    }
+  },
+  {
+    "text": "just answer my question",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.6013305187225342
+    }
+  },
+  {
+    "text": "aur kya haal hai",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "problem_ringworm",
+      "confidence": 0.18234878778457642
+    }
+  },
+  {
+    "text": "give me your money",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.3519182801246643
+    }
+  },
+  {
+    "text": "i am inevitable",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.35293862223625183
+    }
+  },
+  {
+    "text": "do you use artifical intelligence",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "problem_night-blindness",
+      "confidence": 0.3208360970020294
+    }
+  },
+  {
+    "text": "/long-duration",
+    "intent": "long-duration",
+    "intent_prediction": {
+      "name": "small-duration",
+      "confidence": 0.4855401813983917
+    }
+  },
+  {
+    "text": "restlessness",
+    "intent": "problem_headache",
+    "intent_prediction": {
+      "name": "problem_obesity",
+      "confidence": 0.31326088309288025
+    }
+  },
+  {
+    "text": "Hoarseness",
+    "intent": "problem_cough",
+    "intent_prediction": {
+      "name": "problem_ear-pain",
+      "confidence": 0.13091634213924408
+    }
+  },
+  {
+    "text": "wheezing and shortness of breath",
+    "intent": "problem_cough",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.9846283793449402
+    }
+  },
+  {
+    "text": "i cant breathe in night",
+    "intent": "problem_nasal-blockage",
+    "intent_prediction": {
+      "name": "problem_night-blindness",
+      "confidence": 0.21407544612884521
+    }
+  },
+  {
+    "text": "i have stuffy nose",
+    "intent": "problem_nasal-blockage",
+    "intent_prediction": {
+      "name": "problem_common-cold",
+      "confidence": 0.3636109232902527
+    }
+  },
+  {
+    "text": "my nose is red and i am sneezing a lot",
+    "intent": "problem_common-cold",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.34125131368637085
+    }
+  },
+  {
+    "text": "my eyes are watery",
+    "intent": "problem_conjunctivits",
+    "intent_prediction": {
+      "name": "problem_eye-problem",
+      "confidence": 0.8589969873428345
+    }
+  },
+  {
+    "text": "watery eyes",
+    "intent": "problem_conjunctivits",
+    "intent_prediction": {
+      "name": "problem_eye-problem",
+      "confidence": 0.8686249852180481
+    }
+  },
+  {
+    "text": "i feel like drinking water always",
+    "intent": "problem_diabetes",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.25474101305007935
+    }
+  },
+  {
+    "text": "feeling apetite",
+    "intent": "problem_diabetes",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.16890497505664825
+    }
+  },
+  {
+    "text": "my skin is scaly and itchy",
+    "intent": "problem_fungal-infection",
+    "intent_prediction": {
+      "name": "problem_ringworm",
+      "confidence": 0.5729245543479919
+    }
+  },
+  {
+    "text": "loss of appetite",
+    "intent": "problem_chickenpox",
+    "intent_prediction": {
+      "name": "problem_period-cramps",
+      "confidence": 0.33829742670059204
+    }
+  },
+  {
+    "text": "I have joint pains",
+    "intent": "problem_psoriasis",
+    "intent_prediction": {
+      "name": "problem_cough",
+      "confidence": 0.41521701216697693
+    }
+  },
+  {
+    "text": "I am having difficulties in doing physical activities",
+    "intent": "problem_obesity",
+    "intent_prediction": {
+      "name": "problem_conjunctivits",
+      "confidence": 0.31813934445381165
+    }
+  },
+  {
+    "text": "I find it hard to nap during the day, despite feeling tired",
+    "intent": "problem_insomnia",
+    "intent_prediction": {
+      "name": "problem_mild-heart-disease",
+      "confidence": 0.25071367621421814
+    }
+  },
+  {
+    "text": "I feel tired and irritable during the day and have difficulty concentrating",
+    "intent": "problem_insomnia",
+    "intent_prediction": {
+      "name": "problem_night-blindness",
+      "confidence": 0.2099870890378952
+    }
+  },
+  {
+    "text": "I feel triggered stress a lot",
+    "intent": "problem_psychosis",
+    "intent_prediction": {
+      "name": "problem_low-blood-pressure",
+      "confidence": 0.5507051944732666
+    }
+  },
+  {
+    "text": "I had parkinsons disease",
+    "intent": "problem_psychosis",
+    "intent_prediction": {
+      "name": "problem_chickenpox",
+      "confidence": 0.23417887091636658
+    }
+  },
+  {
+    "text": "I am usually struggling with stress",
+    "intent": "problem_depression",
+    "intent_prediction": {
+      "name": "problem_low-blood-pressure",
+      "confidence": 0.6127609014511108
+    }
+  },
+  {
+    "text": "I always quit due to mental tention",
+    "intent": "problem_depression",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.25270876288414
+    }
+  },
+  {
+    "text": "suicidal tendency",
+    "intent": "problem_depression",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.3041101098060608
+    }
+  },
+  {
+    "text": "Having stabbing chest aches while deep breathing",
+    "intent": "problem_pneumonia",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.5541083216667175
+    }
+  },
+  {
+    "text": "Having low energy and fatigue",
+    "intent": "problem_pneumonia",
+    "intent_prediction": {
+      "name": "problem_chickenpox",
+      "confidence": 0.44852137565612793
+    }
+  },
+  {
+    "text": "i am having problem in breathing",
+    "intent": "problem_bronchial-asthma",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.5728549361228943
+    }
+  },
+  {
+    "text": "i have lost smell sensation",
+    "intent": "problem_coronavirus",
+    "intent_prediction": {
+      "name": "problem_nasal-blockage",
+      "confidence": 0.49748149514198303
+    }
+  },
+  {
+    "text": "fatigue",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_chickenpox",
+      "confidence": 0.6263272762298584
+    }
+  },
+  {
+    "text": "i feel tired",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.777225911617279
+    }
+  },
+  {
+    "text": "i am feeling hot",
+    "intent": "problem_high-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_weakness",
+      "confidence": 0.14380000531673431
+    }
+  },
+  {
+    "text": "i am sensitive to light, sound, or smell",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_night-blindness",
+      "confidence": 0.3257298171520233
+    }
+  },
+  {
+    "text": "i am not able to see at all due to pain in side of head",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_headache",
+      "confidence": 0.6989983916282654
+    }
+  },
+  {
+    "text": "i ahve frequent migrain attacks",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_mild-heart-disease",
+      "confidence": 0.28321337699890137
+    }
+  },
+  {
+    "text": "im feeling weak",
+    "intent": "problem_weakness",
+    "intent_prediction": {
+      "name": "problem_vit-d-deficiency",
+      "confidence": 0.3703775107860565
+    }
+  },
+  {
+    "text": "i am feeling dizzy",
+    "intent": "problem_weakness",
+    "intent_prediction": {
+      "name": "problem_high-blood-pressure",
+      "confidence": 0.9236537218093872
+    }
+  },
+  {
+    "text": "my eyes are waretring",
+    "intent": "problem_eye-problem",
+    "intent_prediction": {
+      "name": "problem_conjunctivits",
+      "confidence": 0.614456057548523
+    }
+  },
+  {
+    "text": "i am suffering from tinnitus",
+    "intent": "problem_ear-pain",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.14482823014259338
+    }
+  },
+  {
+    "text": "a question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.62945157289505
+    }
+  },
+  {
+    "text": "question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.6692003607749939
+    }
+  },
+  {
+    "text": "give me an answer",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.9006670713424683
+    }
+  },
+  {
+    "text": "give me the answer",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.8645294904708862
+    }
+  },
+  {
+    "text": "answers",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.8519646525382996
+    }
+  },
+  {
+    "text": "a good day",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "small-duration",
+      "confidence": 0.6738079190254211
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "small-duration",
+      "confidence": 0.8245121836662292
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "long-duration",
+      "confidence": 0.2524181008338928
+    }
+  },
+  {
+    "text": "yes please",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.7285836338996887
+    }
+  },
+  {
+    "text": "thanks",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9826209545135498
+    }
+  },
+  {
+    "text": "disagree",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "small-duration",
+      "confidence": 0.5449712872505188
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7277780175209045
+    }
+  },
+  {
+    "text": "yes i have a question",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.6972923874855042
+    }
+  },
+  {
+    "text": "yes i want to ask a question",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.7336979508399963
+    }
+  },
+  {
+    "text": "ask",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.9461362957954407
+    }
+  },
+  {
+    "text": "or want Quick Assistance",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.9517859816551208
+    }
+  },
+  {
+    "text": "can you answer me",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.7609362602233887
+    }
+  },
+  {
+    "text": "i am batman",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.18971548974514008
+    }
+  },
+  {
+    "text": "i love you",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9082630276679993
+    }
+  },
+  {
+    "text": "ya",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7912173867225647
+    }
+  },
+  {
+    "text": "i want to talk to someone",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.5767200589179993
+    }
+  },
+  {
+    "text": "/small-duration",
+    "intent": "small-duration",
+    "intent_prediction": {
+      "name": "long-duration",
+      "confidence": 0.9319022297859192
+    }
+  },
+  {
+    "text": "10-20",
+    "intent": "age-below-18",
+    "intent_prediction": {
+      "name": "small-duration",
+      "confidence": 0.6591418385505676
+    }
+  },
+  {
+    "text": "20+",
+    "intent": "age-above-18",
+    "intent_prediction": {
+      "name": "small-duration",
+      "confidence": 0.7928639054298401
+    }
+  },
+  {
+    "text": "i have wet cough constantly at night",
+    "intent": "problem_cough",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.2947171926498413
+    }
+  },
+  {
+    "text": "nose causing difficulty breathing",
+    "intent": "problem_nasal-blockage",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.9537009596824646
+    }
+  },
+  {
+    "text": "i have running nose",
+    "intent": "problem_common-cold",
+    "intent_prediction": {
+      "name": "problem_nasal-blockage",
+      "confidence": 0.8369004130363464
+    }
+  },
+  {
+    "text": "i recently got fever in night",
+    "intent": "problem_common-cold",
+    "intent_prediction": {
+      "name": "problem_night-blindness",
+      "confidence": 0.2901666760444641
+    }
+  },
+  {
+    "text": "my nose is blocked and itchy",
+    "intent": "problem_common-cold",
+    "intent_prediction": {
+      "name": "problem_nasal-blockage",
+      "confidence": 0.6303800344467163
+    }
+  },
+  {
+    "text": "redness in eye",
+    "intent": "problem_conjunctivits",
+    "intent_prediction": {
+      "name": "problem_eye-problem",
+      "confidence": 0.421752393245697
+    }
+  },
+  {
+    "text": "stuckness in throat",
+    "intent": "problem_gerd",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.40676945447921753
+    }
+  },
+  {
+    "text": "i am having problem in sweeling",
+    "intent": "problem_gerd",
+    "intent_prediction": {
+      "name": "problem_psoriasis",
+      "confidence": 0.15367242693901062
+    }
+  },
+  {
+    "text": "i feel tired",
+    "intent": "problem_diabetes",
+    "intent_prediction": {
+      "name": "problem_low-blood-pressure",
+      "confidence": 0.8939663767814636
+    }
+  },
+  {
+    "text": "i have fever",
+    "intent": "problem_typhoid",
+    "intent_prediction": {
+      "name": "problem_common-cold",
+      "confidence": 0.8747292160987854
+    }
+  },
+  {
+    "text": "I am gaining more fat day by day",
+    "intent": "problem_obesity",
+    "intent_prediction": {
+      "name": "long-duration",
+      "confidence": 0.4573482573032379
+    }
+  },
+  {
+    "text": "have a habit of binge eating",
+    "intent": "problem_obesity",
+    "intent_prediction": {
+      "name": "problem_ear-pain",
+      "confidence": 0.17147910594940186
+    }
+  },
+  {
+    "text": "I got severe depression",
+    "intent": "problem_psychosis",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.9709442853927612
+    }
+  },
+  {
+    "text": "I feel sad a lot",
+    "intent": "problem_psychosis",
+    "intent_prediction": {
+      "name": "problem_chickenpox",
+      "confidence": 0.3393707871437073
+    }
+  },
+  {
+    "text": "I stay sad and all depressed for long",
+    "intent": "problem_psychosis",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.9027060270309448
+    }
+  },
+  {
+    "text": "I am worried too much about myself",
+    "intent": "problem_depression",
+    "intent_prediction": {
+      "name": "problem_drug-info",
+      "confidence": 0.28953588008880615
+    }
+  },
+  {
+    "text": "I got many traumatical situation",
+    "intent": "problem_depression",
+    "intent_prediction": {
+      "name": "problem_psoriasis",
+      "confidence": 0.3220478892326355
+    }
+  },
+  {
+    "text": "i have cough and its green colour",
+    "intent": "problem_pneumonia",
+    "intent_prediction": {
+      "name": "problem_fungal-infection",
+      "confidence": 0.37789514660835266
+    }
+  },
+  {
+    "text": "wheezing",
+    "intent": "problem_bronchial-asthma",
+    "intent_prediction": {
+      "name": "problem_cough",
+      "confidence": 0.74709153175354
+    }
+  },
+  {
+    "text": "dizziness or lightheadedness",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_weakness",
+      "confidence": 0.7466391324996948
+    }
+  },
+  {
+    "text": "lack of concentration",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_mild-heart-disease",
+      "confidence": 0.4929884374141693
+    }
+  },
+  {
+    "text": "depression",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.9848715662956238
+    }
+  },
+  {
+    "text": "i am having severe headache",
+    "intent": "problem_high-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_headache",
+      "confidence": 0.845890998840332
+    }
+  },
+  {
+    "text": "i am sweating",
+    "intent": "problem_high-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_obesity",
+      "confidence": 0.23035463690757751
+    }
+  },
+  {
+    "text": "my gums are infected",
+    "intent": "problem_toothache",
+    "intent_prediction": {
+      "name": "problem_mild-heart-disease",
+      "confidence": 0.28283247351646423
+    }
+  },
+  {
+    "text": "i am extreme pain seizures in head",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_weakness",
+      "confidence": 0.22602511942386627
+    }
+  },
+  {
+    "text": "i have wave sensations in my head",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_headache",
+      "confidence": 0.9515332579612732
+    }
+  },
+  {
+    "text": "my ears are continuously ringing",
+    "intent": "problem_ear-pain",
+    "intent_prediction": {
+      "name": "problem_migraine",
+      "confidence": 0.6082137823104858
+    }
+  },
+  {
+    "text": "i have experienced heart atack before",
+    "intent": "problem_mild-heart-disease",
+    "intent_prediction": {
+      "name": "problem_typhoid",
+      "confidence": 0.4996808171272278
+    }
+  },
+  {
+    "text": "need to ask question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.6053638458251953
+    }
+  },
+  {
+    "text": "want to consult with please help me urgently",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.9522166848182678
+    }
+  },
+  {
+    "text": "tell me the answer",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.7199743986129761
+    }
+  },
+  {
+    "text": "answer it",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.7665042281150818
+    }
+  },
+  {
+    "text": "I want you to answer my question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.6663458943367004
+    }
+  },
+  {
+    "text": "answering questions",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.850795328617096
+    }
+  },
+  {
+    "text": "I want the answer now",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.8477756381034851
+    }
+  },
+  {
+    "text": "what are side effects of ambien",
+    "intent": "problem_drug-info",
+    "intent_prediction": {
+      "name": "problem_migraine",
+      "confidence": 0.21566496789455414
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.996547520160675
+    }
+  },
+  {
+    "text": "talk to you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.46855777502059937
+    }
+  },
+  {
+    "text": "get lost",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "problem_nasal-blockage",
+      "confidence": 0.5063831806182861
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "long-duration",
+      "confidence": 0.15594762563705444
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9325339794158936
+    }
+  },
+  {
+    "text": "no thank   very much",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.762231171131134
+    }
+  },
+  {
+    "text": "I want to ask a question",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.6892902851104736
+    }
+  },
+  {
+    "text": "help",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.36971548199653625
+    }
+  },
+  {
+    "text": "need to ask question",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.666142463684082
+    }
+  },
+  {
+    "text": "want to ask",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.8858112096786499
+    }
+  },
+  {
+    "text": "tell me the answer",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.5815861821174622
+    }
+  },
+  {
+    "text": "i am a god",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "problem_psychosis",
+      "confidence": 0.34600046277046204
+    }
+  },
+  {
+    "text": "chha gaye guru",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7286174297332764
+    }
+  },
+  {
+    "text": "i have lot of moeny",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "problem_obesity",
+      "confidence": 0.2143445760011673
+    }
+  },
+  {
+    "text": "iweuro",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.45095565915107727
+    }
+  },
+  {
+    "text": "5 days",
+    "intent": "long-duration",
+    "intent_prediction": {
+      "name": "small-duration",
+      "confidence": 0.6241790652275085
+    }
+  },
+  {
+    "text": "i am underage",
+    "intent": "age-below-18",
+    "intent_prediction": {
+      "name": "problem_arthritis",
+      "confidence": 0.3891279697418213
+    }
+  },
+  {
+    "text": "pain spread to or from the neck",
+    "intent": "problem_headache",
+    "intent_prediction": {
+      "name": "problem_high-blood-pressure",
+      "confidence": 0.31642788648605347
+    }
+  },
+  {
+    "text": "wheezing cough",
+    "intent": "problem_cough",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.5682165026664734
+    }
+  },
+  {
+    "text": "i have problem in breathing while sleeping",
+    "intent": "problem_nasal-blockage",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.9358401298522949
+    }
+  },
+  {
+    "text": "reduced sense of smell and tase",
+    "intent": "problem_nasal-blockage",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.3627428412437439
+    }
+  },
+  {
+    "text": "mucus buildup",
+    "intent": "problem_nasal-blockage",
+    "intent_prediction": {
+      "name": "problem_insomnia",
+      "confidence": 0.15686170756816864
+    }
+  },
+  {
+    "text": "i have fever",
+    "intent": "problem_common-cold",
+    "intent_prediction": {
+      "name": "problem_typhoid",
+      "confidence": 0.9265486598014832
+    }
+  },
+  {
+    "text": "i have common cold and my body temperature is high",
+    "intent": "problem_common-cold",
+    "intent_prediction": {
+      "name": "problem_typhoid",
+      "confidence": 0.34999534487724304
+    }
+  },
+  {
+    "text": "i feel hungry always",
+    "intent": "problem_diabetes",
+    "intent_prediction": {
+      "name": "problem_psychosis",
+      "confidence": 0.4578830599784851
+    }
+  },
+  {
+    "text": "silver like dusting",
+    "intent": "problem_psoriasis",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.3315354883670807
+    }
+  },
+  {
+    "text": "Feels night are very long",
+    "intent": "problem_insomnia",
+    "intent_prediction": {
+      "name": "problem_nasal-blockage",
+      "confidence": 0.36599764227867126
+    }
+  },
+  {
+    "text": "I have low mood all the time",
+    "intent": "problem_depression",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.3475920855998993
+    }
+  },
+  {
+    "text": "Have too much sadness",
+    "intent": "problem_depression",
+    "intent_prediction": {
+      "name": "problem_obesity",
+      "confidence": 0.5222917199134827
+    }
+  },
+  {
+    "text": "Difficulty in deep breathing",
+    "intent": "problem_pneumonia",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.6731610298156738
+    }
+  },
+  {
+    "text": "i am not able to breathe properly",
+    "intent": "problem_bronchial-asthma",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.9798169732093811
+    }
+  },
+  {
+    "text": "my frineds have  covid    -19",
+    "intent": "problem_coronavirus",
+    "intent_prediction": {
+      "name": "long-duration",
+      "confidence": 0.2936321794986725
+    }
+  },
+  {
+    "text": "i am coughing continuously",
+    "intent": "problem_coronavirus",
+    "intent_prediction": {
+      "name": "problem_ear-pain",
+      "confidence": 0.3640717566013336
+    }
+  },
+  {
+    "text": "i am having dry cough",
+    "intent": "problem_coronavirus",
+    "intent_prediction": {
+      "name": "problem_cough",
+      "confidence": 0.425978422164917
+    }
+  },
+  {
+    "text": "i have blood in my urine",
+    "intent": "problem_high-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_low-blood-pressure",
+      "confidence": 0.34951210021972656
+    }
+  },
+  {
+    "text": "i feel tired and exhausted",
+    "intent": "problem_high-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.8698212504386902
+    }
+  },
+  {
+    "text": "i am feeling nervous",
+    "intent": "problem_high-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_weakness",
+      "confidence": 0.27778002619743347
+    }
+  },
+  {
+    "text": "itchy skin",
+    "intent": "problem_ringworm",
+    "intent_prediction": {
+      "name": "problem_fungal-infection",
+      "confidence": 0.9529168009757996
+    }
+  },
+  {
+    "text": "i have mood swings",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.29799047112464905
+    }
+  },
+  {
+    "text": "i am having hallucinations",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_psychosis",
+      "confidence": 0.9686896800994873
+    }
+  },
+  {
+    "text": "low hb",
+    "intent": "problem_anaemia",
+    "intent_prediction": {
+      "name": "problem_low-blood-pressure",
+      "confidence": 0.6705600023269653
+    }
+  },
+  {
+    "text": "i am feeling exhausted",
+    "intent": "problem_weakness",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.8825480937957764
+    }
+  },
+  {
+    "text": "i am feeling weekness",
+    "intent": "problem_weakness",
+    "intent_prediction": {
+      "name": "long-duration",
+      "confidence": 0.7791483998298645
+    }
+  },
+  {
+    "text": "help me bro",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.41202428936958313
+    }
+  },
+  {
+    "text": "help",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.36971548199653625
+    }
+  },
+  {
+    "text": "or want Quick Assistance",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.9378176927566528
+    }
+  },
+  {
+    "text": "answer the question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.5857526063919067
+    }
+  },
+  {
+    "text": "can you answer my question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.6038969159126282
+    }
+  },
+  {
+    "text": "can you answer",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.7434064745903015
+    }
+  },
+  {
+    "text": "long time no see",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9628079533576965
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.19009271264076233
+    }
+  },
+  {
+    "text": "bye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6915105581283569
+    }
+  },
+  {
+    "text": "thanks love",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.7439282536506653
+    }
+  },
+  {
+    "text": "see ya",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.5736902952194214
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.8455290794372559
+    }
+  },
+  {
+    "text": "I have a question.",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.5418039560317993
+    }
+  },
+  {
+    "text": "I need your help",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.8329287767410278
+    }
+  },
+  {
+    "text": "answer me",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.5922623872756958
+    }
+  },
+  {
+    "text": "give me an answer",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.9282271862030029
+    }
+  },
+  {
+    "text": "give me the answer",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.8930763602256775
+    }
+  },
+  {
+    "text": "answers",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.9021960496902466
+    }
+  },
+  {
+    "text": "can you answer",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.6971650719642639
+    }
+  },
+  {
+    "text": "you are idiot",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7723715305328369
+    }
+  },
+  {
+    "text": "o bete",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.420833945274353
+    }
+  },
+  {
+    "text": "1 week",
+    "intent": "long-duration",
+    "intent_prediction": {
+      "name": "small-duration",
+      "confidence": 0.36081528663635254
+    }
+  },
+  {
+    "text": "my nose is blocked",
+    "intent": "problem_nasal-blockage",
+    "intent_prediction": {
+      "name": "problem_common-cold",
+      "confidence": 0.8847478032112122
+    }
+  },
+  {
+    "text": "lost sense of smell",
+    "intent": "problem_nasal-blockage",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.9098207950592041
+    }
+  },
+  {
+    "text": "i feel something in throat",
+    "intent": "problem_gerd",
+    "intent_prediction": {
+      "name": "problem_diabetes",
+      "confidence": 0.14896610379219055
+    }
+  },
+  {
+    "text": "i am facing urinating tendency",
+    "intent": "problem_diabetes",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.2739355266094208
+    }
+  },
+  {
+    "text": "i am having blisters",
+    "intent": "problem_fungal-infection",
+    "intent_prediction": {
+      "name": "problem_high-blood-pressure",
+      "confidence": 0.40195605158805847
+    }
+  },
+  {
+    "text": "I am experiencing pain in my abdomen",
+    "intent": "problem_typhoid",
+    "intent_prediction": {
+      "name": "problem_period-cramps",
+      "confidence": 0.5635430216789246
+    }
+  },
+  {
+    "text": "I am having high blood pressure",
+    "intent": "problem_obesity",
+    "intent_prediction": {
+      "name": "problem_high-blood-pressure",
+      "confidence": 0.8321110606193542
+    }
+  },
+  {
+    "text": "I mostly feel breathlessness",
+    "intent": "problem_obesity",
+    "intent_prediction": {
+      "name": "problem_headache",
+      "confidence": 0.20688821375370026
+    }
+  },
+  {
+    "text": "I always get sweated",
+    "intent": "problem_obesity",
+    "intent_prediction": {
+      "name": "problem_chickenpox",
+      "confidence": 0.7268919348716736
+    }
+  },
+  {
+    "text": "I find it difficult to fall asleep",
+    "intent": "problem_insomnia",
+    "intent_prediction": {
+      "name": "problem_obesity",
+      "confidence": 0.32507482171058655
+    }
+  },
+  {
+    "text": "Restless nights",
+    "intent": "problem_insomnia",
+    "intent_prediction": {
+      "name": "problem_fungal-infection",
+      "confidence": 0.4304386079311371
+    }
+  },
+  {
+    "text": "Cant sleep at nights",
+    "intent": "problem_insomnia",
+    "intent_prediction": {
+      "name": "problem_nasal-blockage",
+      "confidence": 0.7522798776626587
+    }
+  },
+  {
+    "text": "I am having hallucinations",
+    "intent": "problem_psychosis",
+    "intent_prediction": {
+      "name": "problem_migraine",
+      "confidence": 0.9719858169555664
+    }
+  },
+  {
+    "text": "I get episdoes of depression and mania",
+    "intent": "problem_psychosis",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.8182573914527893
+    }
+  },
+  {
+    "text": "Having yellow cough with bloody mucus",
+    "intent": "problem_pneumonia",
+    "intent_prediction": {
+      "name": "problem_coronavirus",
+      "confidence": 0.22441118955612183
+    }
+  },
+  {
+    "text": "I have rapid and shallow breathing",
+    "intent": "problem_pneumonia",
+    "intent_prediction": {
+      "name": "problem_low-blood-pressure",
+      "confidence": 0.8436772227287292
+    }
+  },
+  {
+    "text": "I have fever eith green cough",
+    "intent": "problem_pneumonia",
+    "intent_prediction": {
+      "name": "problem_cough",
+      "confidence": 0.5516290664672852
+    }
+  },
+  {
+    "text": "i am having chest pains",
+    "intent": "problem_bronchial-asthma",
+    "intent_prediction": {
+      "name": "problem_high-blood-pressure",
+      "confidence": 0.7232113480567932
+    }
+  },
+  {
+    "text": "my chest is paining",
+    "intent": "problem_bronchial-asthma",
+    "intent_prediction": {
+      "name": "problem_mild-heart-disease",
+      "confidence": 0.7512086033821106
+    }
+  },
+  {
+    "text": "i was in the quarantinve center",
+    "intent": "problem_coronavirus",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.3208569884300232
+    }
+  },
+  {
+    "text": "i am not able to breathe properly",
+    "intent": "problem_coronavirus",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.9876783490180969
+    }
+  },
+  {
+    "text": "cold, clammy, pale skin",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_fungal-infection",
+      "confidence": 0.668731689453125
+    }
+  },
+  {
+    "text": "i am stressed out",
+    "intent": "problem_low-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_depression",
+      "confidence": 0.5861036777496338
+    }
+  },
+  {
+    "text": "i am feeling dizzy",
+    "intent": "problem_high-blood-pressure",
+    "intent_prediction": {
+      "name": "problem_weakness",
+      "confidence": 0.9288396835327148
+    }
+  },
+  {
+    "text": "ring    -shaped rash",
+    "intent": "problem_ringworm",
+    "intent_prediction": {
+      "name": "problem_chickenpox",
+      "confidence": 0.5701026320457458
+    }
+  },
+  {
+    "text": "i have scaly, itchy, red spots on the cheeks, chin, and upper neck",
+    "intent": "problem_ringworm",
+    "intent_prediction": {
+      "name": "problem_fungal-infection",
+      "confidence": 0.4434930384159088
+    }
+  },
+  {
+    "text": "i am having a very strong headache",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_headache",
+      "confidence": 0.4161223769187927
+    }
+  },
+  {
+    "text": "i am nauseated",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_high-blood-pressure",
+      "confidence": 0.32602009177207947
+    }
+  },
+  {
+    "text": "i have strong pain in back part of head",
+    "intent": "problem_migraine",
+    "intent_prediction": {
+      "name": "problem_headache",
+      "confidence": 0.9503418207168579
+    }
+  },
+  {
+    "text": "restricted movement of the joints",
+    "intent": "problem_arthritis",
+    "intent_prediction": {
+      "name": "problem_psoriasis",
+      "confidence": 0.7353673577308655
+    }
+  },
+  {
+    "text": "i am suffering from eye problem due to long screen time",
+    "intent": "problem_eye-problem",
+    "intent_prediction": {
+      "name": "problem_bronchial-asthma",
+      "confidence": 0.4944618046283722
+    }
+  },
+  {
+    "text": "Yes, I have a question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.6305577158927917
+    }
+  },
+  {
+    "text": "answer my question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.5627338886260986
+    }
+  },
+  {
+    "text": "just answer the question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.8024629950523376
+    }
+  },
+  {
+    "text": "can you answer a question for me",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.5315717458724976
+    }
+  },
+  {
+    "text": "just answer my question",
+    "intent": "problem_want_to_ask_question",
+    "intent_prediction": {
+      "name": "ask_question",
+      "confidence": 0.8373070359230042
+    }
+  },
+  {
+    "text": "whats the dosage of mirtazapine",
+    "intent": "problem_drug-info",
+    "intent_prediction": {
+      "name": "problem_want_to_ask_question",
+      "confidence": 0.24642127752304077
+    }
+  }
+]

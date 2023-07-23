@@ -1,0 +1,1831 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hiii
+    - Hi how are
+    - Hiii how are
+    - gud mrng
+    - gud nite
+    - good evening to
+    - hey good evening
+    - hello good evening
+    - evening
+    - good evening there
+    - good morning to
+    - hello good morning
+    - nice morning
+    - great morning
+    - morning
+    - good morning there
+    - top of the morning to
+    - a good morning
+    - hi good morning
+    - and a good morning to
+    - good morning too
+    - long time no see
+    - howdy
+    - hey there
+    - hey
+    - greetings
+    - greet
+    - hi there
+    - hello there
+    - lovely day isn't it
+    - hello again
+    - just going to say hi
+    - a good day
+    - afternoon
+    - hello hi
+    - heya
+
+- intent: symptom-yes
+  examples: |
+    - s
+    - yes
+    - yaa
+    - yeah
+    - yup
+    - ha
+
+- intent: symptom-no
+  examples: |
+    - no
+    - nope
+    - n
+    - nah 
+    - never
+    - nn
+
+- intent: shoulder_pain
+  examples: |
+    - i have shoulder pain
+    
+    
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - goodbye
+    - see you
+    - see you soon
+    - bye-bye
+    - good bye
+    - bye bye see you
+    - bye bye see you soon
+    - bye bye take care
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - right
+    - thats right
+    - you are right
+    - your are right
+    - nice prediction
+    - yes it helped me
+
+- intent: out_of_scope
+  examples: |
+    - i am god
+    - sjdjajsdl
+    - asjdaljhsdj
+    - asdfja;lsdf
+    - i am batman
+    - i am iron man
+    - i love you
+    - i am a god
+    - i dont like you
+    - you are idiot
+    - aur kya haal hai
+    - tum to bade heavy chatbot ho
+    - o bete 
+    - chha gaye guru
+    - you killed my father prepare to die
+    - luke i am your father
+    - my name is inigo montayo you killed my father
+    - give me your money
+    - i am inevitable
+    - i will destroy this planet
+    - i have lot of moeny
+    - i like trains
+    - bullet train
+    - we are venom
+    - modi ji
+    - vote for modi
+    - asdhasd
+    - cadfjah
+    - asdad
+    - asdlkfja
+    - asjdfl asdlfkj alksjdf asjdfl
+    - iweuro
+    - lajkjsdfl
+    - aksjdf
+    - a fd d f sd f sd s sd d d dw
+    - asdas
+    - abra ka dabra
+    - avada kadavra
+    - yup
+    - ya
+    - hsdjahsdahsdajsd
+    - asjdasdja
+    - jjjjjjj
+    - asdkjasdjalsd.
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really 
+    - don't want that
+    - disagree
+    - don't want
+    - not interested
+    - don't think so
+    - no way
+    - no it isn't
+    - no don't
+    - I'm not
+    - na
+    - no that's fine thank
+    - never
+    - said no
+    - of course not
+    - nah
+    - no tanks
+    - no never
+    - no need
+    - no thanks
+    - no sorry
+    - do not
+    - not today
+    - no it's not
+    - absolutely not
+    - not that
+    - nope
+    - don't want to
+    - no would not
+    - let 's not
+    - not needed
+    - not this time
+    - no don't do that
+    - thanks but no thanks
+    - no that's wrong
+    - not this
+    - definitely not
+    - not at this time
+    - not exactly
+    - not really no
+    - no thank   not right now
+    - actually no
+    - no leave it
+    - sorry no
+    - no incorrect
+    - nope sorry
+    - say no
+    - not really
+    - not right now thanks
+    - think no
+    - absolutely no
+    - no actually
+    - apparently not
+    - no do not
+    - no just no
+    - no but thank
+    - no need thanks
+    - no thank   though
+    - no thank   very much
+    - no thanks not right now
+    - no forget
+    - okay see you later
+    - hope to see you later
+    - bye for now
+    - till next time
+    - I must go
+    - I said bye
+    - never mind bye
+    - now bye
+    - that's all goodbye
+    - that's it goodbye
+    - leave me alone
+    - go to bed
+    - goodbye for now
+    - talk to you later
+    - you can go now
+    - get lost
+    - goodbye see you later
+    - alright bye
+    - see ya
+    - thanks bye bye
+    - okay bye
+    - okay thank you bye
+    - see you tomorrow
+    - ok bye
+    - you helped a lot thank you
+    - appreciate your help
+    - cheers
+    - thank you
+    - thanks a lot
+    - terrific thank you
+    - great thank you
+    - thanks so much
+    - thank you so much
+    - thanks for your help
+    - thank you for your help
+    - nice thank you
+    - I appreciate it
+    - I thank you
+    - thank you that will be all
+    - thanks buddy
+    - thanks love
+    - thank you my friend
+    - well thanks
+    - very good thank you
+    - good thanks
+    - thanks again
+    - thank you again
+    - all thank you
+    - alright thank you
+    - alright thanks
+    - no thank you that's all
+
+- intent: want_to_ask_question
+  examples: |
+    - i want to ask a question
+    - i want to know information on deugs
+    - i want your help
+    - help me bro
+    - i want to know doasage of drugs
+    - i want information of some drugs
+    - i want to know side effects of drugs
+    - i want your help
+    - help me please
+    - tell me something
+    - yes i have a question
+    - yes i want to ask a question
+    - I want to ask a question
+    - Yes, I have a question
+    - I need your help
+    - help
+    - need to ask question
+    - a question
+    - want to consult with please help me urgently
+    - question
+    - want to ask
+    - ask
+    - or want Quick Assistance
+    - I want you to answer me
+    - answer
+    - answer my question
+    - answer me
+    - give me an answer
+    - answer the question
+    - can you answer my question
+    - tell me the answer
+    - answer it
+    - give me the answer
+    - I want you to answer my question
+    - just answer the question
+    - can you answer me
+    - answers
+    - can you answer a question for me
+    - can you answer
+    - answering questions
+    - I want the answer now
+    - just answer my question
+    - i want some drug information
+    - i want to know about a certain drug usage
+    - precautions of some drug
+    - side effect of some drug
+
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: small-duration
+  examples: |
+    - one
+    - 1
+    - 2
+    - 3 
+    - two
+    - three
+    - less than one
+    - less than two
+    - less than three
+    - less than 1
+    - less than 2
+    - less than 3
+- intent: long-duration
+  examples: |
+   - four
+   - 4
+   - 5
+   - 6 
+   - five
+   - six
+   - more than four
+   - more than five
+   - more than 4
+   - more than 6
+   - more than 3
+
+- intent: age-below-18
+  examples: |
+    - below 18
+    - below 10
+    - 10-20
+    - 18-
+    - i am underage
+    - below 15
+    - /age-below-18
+
+- intent: age-above-18
+  examples: |
+    - above 18
+    - above 10
+    - 20+
+    - i am adult
+    - i am above 60
+    - /age-above-18
+
+- intent: problem_headache_tension
+  examples: |
+    - tension 
+    - exam
+    - did not sleep
+    - headache tension 
+
+- intent: problem_migraine
+  examples: |
+    - migraine 
+    - headache migraine
+
+- intent: problem_headache
+  examples: |
+    - hdache
+    - hadac
+    - headac
+    - hdachr
+    - headacha
+    - hadache
+    - hdce
+    - headace
+    - i have headach
+    - headache
+    - headach
+    - a headache
+    - i have head pain
+    - i have headache
+    - also  headache
+    - a head ache
+    - my head is paining
+    - my head is aching
+    - my head is paining a lot
+    - head pain
+    - pain in my head
+    - i have pain in my head
+    - A painful sensation in any part of the head ranging from sharp to dull
+    - as if they have a tight band around the head
+    - a constant, dull ache on both sides
+    - pain spread to or from the neck
+    - restlessness
+    - a headach
+    - i have ead pain
+    - i hae headache
+    - m headspaining
+    - head pai
+    - i have pin in my head
+    - A painful sensation in anypart of the head ranging from sharp to dull
+    - as if thesa hav a tght band around the head
+    - a onstant, dull ache n both sies
+
+- intent: problem_cough
+  examples: |
+    - cough
+    - i have cough
+    - cough and chest pain
+    - frequent throat clearing and sore throat
+    - sore throat due to coughing
+    - throat clearing
+    - Hoarseness
+    - i have dry cough and my throat pains
+    - wheezing and shortness of breath
+    - wheezing cough
+    - i have wet cough constantly at night
+    - coughing frequently
+    - cough many times
+
+- intent: problem_nasal-blockage
+  examples: |
+    - nasal blockage
+    - i have nasal blockage
+    - my nose is blocked
+    - i cant breathe in night
+    - i have problem in breathing while sleeping
+    - stuffy nose
+    - nassal passages swollen with excess fluid
+    - nasal passage blocked with mucus
+    - nostrill blocked by mucus
+    - nostrill blocked
+    - nose causing difficulty breathing
+    - reduced sense of smell and tase
+    - lost sense of smell
+    - runny nose
+    - i have stuffy nose
+    - mucus buildup
+    - swollen nasal tissue
+
+- intent: problem_common-cold
+  examples: |
+    - i have running nose
+    - i have cold
+    - i am feeling very cold
+    - i have cold and cough
+    - i feel cold
+    - i have fever and i am feeling cold
+    - i have fever
+    - cold
+    - i have running nose
+    - my nose is blocked and itchy
+    - my nose is red and i am sneezing a lot
+    - i have common cold and my body temperature is high
+    - i have dripping nose and fever
+
+- intent: problem_conjunctivits
+  examples: |
+    - red eyes
+    - redness in eye
+    - my eyes are red
+    - redening of eyes
+    - my eyes are growing red
+    - my eyes are watery
+    - watery eyes
+    - wet eyes
+    - teary eyes
+    - itching in eyes
+    - my eyes are itching
+    - scratchy eyes
+    - conjuctivitis in eyes
+    - my eyes are scratching
+    - my eyes are red and its scratching
+    - i think i have conjunctivitis  
+    - feeling painful due to conjuctivitis
+    - how to cure my conjuctivitis
+    - i have been recently suffering with conjuctivitis  
+    - i am suffering from conjuctivitis
+
+- intent: problem_gerd
+  examples: |
+    - heartburn
+    - burning sensation in chest
+    - difficulty while swallowing
+    - burning chest
+    - pain while swallowing
+    - regurgitation of food
+    - sour liquid
+    - lump in throat
+    - stuckness in throat
+    - i am having problem in sweeling
+    - i am having problem in swallowing
+    - sor liquid
+    - hart burn
+    - lump throat
+    - chest burning
+    - i am having burning sensation in chest
+    - i feel something in throat
+    - painful swallowing
+    - i am suffering from gerd
+    - how to cure my gerd
+    - feeling problematic due to gerd
+    - lately going through gerd
+    - i think i have gerd
+    - i have been recently suffering with gerd
+
+
+
+- intent: problem_diabetes
+  examples: |
+    - i am facing urinating tendency
+    - i am having peeing tenedency
+    - i always feel like urinating
+    - i always feel like peeing
+    - i repeatedly go for urinating
+    - i repeatedly pee
+    - i feeling thirsty at all times
+    - i am always thirsty
+    - i feel like drinking water always
+    - i am peeing too much
+    - weight loss
+    - i had weightloss
+    - decrease in weight
+    - i am losing weight without exercise
+    - i feel hungry always
+    - feeling apetite
+    - exhausted
+    - i feel tired
+    - i get exhausted in little amount of work
+    - i think i have diabetes
+    - going through diabetes
+    - what to do in diabetes
+    - painful diabetes
+    - i am suffering from diabetes
+    - i have been recently suffering with diabetes
+
+- intent: problem_fungal-infection
+  examples: |
+    - irritation in skin
+    - i have scaly skin
+    - my skin is scaly skin
+    - scaly skn
+    - scly skn
+    - i have redness on skin
+    - red skin
+    - colour of skin becoming red
+    - redness of skin
+    - itching in hands and legs
+    - iching on skin
+    - i have itchiness everywhere
+    - i have swelling skin
+    - swelled skin
+    - blisters on my skin
+    - i have skin blsters
+    - blstrs
+    - my skin is irritating
+    - i have irritation
+    - i have scaly skin
+    - my skin is scaly and itchy
+    - i am having itching
+    - i am having blisters
+    - i have blisters
+    - the colour of my skin is becoming red
+    - i think i have fungal infection
+    - i am suffering from fungal infection
+    - i have been recently suffering with fungal infection
+    - feel like fungal infection
+    - i got fungal infection
+
+
+- intent: problem_chickenpox
+  examples: |
+    - I have skin rashes
+    - I have rashes on my skin
+    - I always feel itching
+    - I always feel fatigue
+    - I always feel overtired
+    - swelled lymph nodes
+    - I have swelled lymph nodes
+    - I have swelled lymph nodes all over my body
+    - I have red spots
+    - I have red spots all over my body
+    - loss of appetite
+    - malaise
+    - I always feel malaise
+    - lethargy
+    - I always feel lethargy
+    - i think i have chickenpox
+    - i am suffering from chickenpox
+    - severe chickenpox suffering  
+    - been through chickenpox lately
+    - i have been recently suffering with chickenpox
+
+- intent: problem_typhoid
+  examples: |
+    - I always feel vomiting
+    - I have high body temperature and vomiting
+    - high fever
+    - i have fever
+    - I am having constipation and vomiting
+    - constipation
+    - I am having abdominal pain
+    - I am experiencing pain in my abdomen
+    - I am having belly pain
+    - I am having pain in my belly
+    - I am having fever and vomiting
+    - My body is having chills
+    - I am having chills
+    - i think i have typhoid
+    - going through typhoid
+    - i have troubles due to typhoid
+    - i am suffering from typhoid
+    - i have been recently suffering with typhoid
+
+
+- intent: problem_psoriasis
+  examples: |
+    - I have joint pains
+    - I am having pain in my joints
+    - Joint pain
+    - skin peeling
+    - my skin is peeling so much
+    - I am having small dents in nails
+    - small dents in nails
+    - my nails are having small dents
+    - silver like dusting
+    - I am having inflammatory nails
+    - inflammatory nails
+    - my nails are inflammatory
+    - i think i have psoriasis
+    - i am suffering from psoriasis
+    - what to do is psoriasis
+    - i got problem of psoriasis
+    - i have been recently suffering with psoriasis
+
+- intent: problem_obesity
+  examples: |
+    - I am gaining more fat day by day
+    - I am overweight
+    - I have a pot belly
+    - overweight
+    - pot belly
+    - i have too much body fat
+    - i am fat
+    - I am having high blood pressure
+    - have a habit of binge eating
+    - I mostly feel breathlessness
+    - I am having difficulties in doing physical activities
+    - I always get sweated
+    - i think i have obesity
+    - going through obesity
+    - what to do in obesity sufferings
+    - i am suffering from obesity
+    - i have been recently suffering with obesity
+
+
+- intent: problem_insomnia
+  examples: |
+    - I find it difficult to fall asleep
+    - I lie awake for long periods at night
+    - I wake up several times during the night
+    - I wake up early in the morning and not be able to get back to sleep
+    - I not feel refreshed when you get up
+    - I find it hard to nap during the day, despite feeling tired
+    - I feel tired and irritable during the day and have difficulty concentrating
+    - Restless nights
+    - Cant sleep at nights
+    - Feels night are very long
+    - i think i have insomnia
+    - how to cure my insomnia
+    - i am suffering from insomnia
+    - feeling very painful due to insomnia
+    - i have been recently suffering with insomnia
+
+- intent: problem_psychosis
+  examples: |
+    - I am having hallucinations
+    - Getting delusions lately
+    - I get episdoes of depression and mania
+    - I got severe depression
+    - I feel sad a lot
+    - i am always angry
+    - i feel anger
+    - I feel anger resentment
+    - I feel triggered stress a lot
+    - I stay sad and all depressed for long
+    - I had parkinsons disease
+    - I had a brain tumour
+    - Brain hurts
+    - i think i have psychosis   
+    - how to cure if i am suffering with psychosis
+    - i got problem of psychosis
+    - i am suffering from psychosis
+    - i have been recently suffering with psychosis
+
+- intent: problem_depression
+  examples: |
+    - I have low mood all the time
+    - I am worried too much about myself
+    - I am depressed
+    - i have depression
+    - i am sad and depressed
+    - I am usually struggling with stress
+    - I always quit due to mental tention
+    - I got many traumatical situation
+    - I feel anxiety very much
+    - Have too much sadness
+    - Have very sad thoughts
+    - Have Negative thoughts a lot
+    - i have suicidal thoughts
+    - suicidal tendency
+    - i think i have depression
+    - i am suffering from depression
+    - a lot of depression   
+    - problematic depression every now and then   
+    - i have been recently suffering with depression
+
+- intent: problem_pneumonia
+  examples: |
+    - I am having greenish cough
+    - Having yellow cough with bloody mucus
+    - Having fever and shaking chills
+    - I have rapid and shallow breathing
+    - I have fever eith green cough
+    - i have cough and its green colour
+    - Having stabbing chest aches while deep breathing
+    - Difficulty in deep breathing
+    - Having low energy and fatigue
+    - i think i have pneumonia
+    - how to cure my pneumonia
+    - suffering from pneumonia
+    - i am suffering from pneumonia
+    - i have been recently suffering with pneumonia
+
+
+
+- intent: problem_bronchial-asthma
+  examples: |
+    - wheezing
+    - i have shortness of breath
+    - i am having chest pains
+    - my chest is paining
+    - i am not able to breathe properly
+    - i wheeze while breathing
+    - i had a wheezing attack also i am having cough and cold
+    - i am not able to sleep due to wheezing
+    - i am having problem in breathing
+    - i am not able to sleep due to shortness of breathe
+    - i am wheezing more due to cough and cold
+    - i am wheezing more due to flu
+    - i think i have bronchial asthma
+    - problematic bronchial asthma suffering
+    - i am suffering from bronchial asthma
+    - i have been recently suffering with bronchial asthma
+
+
+- intent: problem_coronavirus
+  examples: |
+    - change in sense of smell or taste
+    - difficulty in breathing
+    - i have corona virus
+    - i may have covid
+    - i was in the quarantinve center
+    - my frineds have  covid    -19
+    - i am having very high fever
+    - i am coughing continuously
+    - i am having difficulty in breathing
+    - i am not feeling any taste
+    - i am not able to smell properly
+    - i have lost sense of taste and smell
+    - i am having dry cough
+    - i have lost smell sensation
+    - i am not able to breathe properly
+    - i don't get the taste of anything
+    - i think i have corona virus
+    - i am suffering from corona virus
+    - i have been recently suffering with corona virus
+    - having symptoms of corona virus
+    - corona virus feeling dizzy hungry and tasteless
+
+
+
+- intent: problem_low-blood-pressure
+  examples: |
+    - dizziness or lightheadedness
+    - i have low bp
+    - my blood pressure is low
+    - i have low blood pressure
+    - dehydration and unusual thirst
+    - lack of concentration
+    - blurred vision
+    - cold, clammy, pale skin
+    - rapid, shallow breathing
+    - fatigue
+    - depression
+    - i feel tired
+    - i have dehydration
+    - i am stressed out
+    - i think i have low blood pressure
+    - low blood pressure pain    
+    - troublesome low blood pressure   
+    - i am suffering from low blood pressure
+    - i have been recently suffering with low blood pressure
+
+- intent: problem_high-blood-pressure
+  examples: |
+    - high blood pressure
+    - high bp
+    - i feel high blood pressure
+    - i am having severe headache
+    - i am having chest pain
+    - pounding in chest, neck or ears
+    - i have blood in my urine
+    - i feel tired and exhausted
+    - i am sweating
+    - i am feeling hot
+    - i am feeling nervous
+    - i am feeling dizzy
+    - i think i have high blood pressure
+    - i am suffering from high blood pressure
+    - i have been recently suffering with high blood pressure
+    - i have high blood pressure  
+
+- intent: problem_ringworm
+  examples: |
+    - itchy skin
+    - ring    
+    -shaped rash
+    - red, scaly, cracked skin
+    - hair loss
+    - i have ring worm
+    - i have red, swollen, itchy skin between the toes
+    - i have scaly, itchy, red, circular bald spot
+    - i have scaly, itchy, red spots, in skin folds of the thigh.
+    - i have scaly, itchy, red spots on the cheeks, chin, and upper neck
+    - i think i have ringworm
+    - i got severe ringworm problem   
+    - i am suffering from ringworm
+    - i have been recently suffering with ringworm
+
+
+
+- intent: problem_toothache
+  examples: |
+    - my tooth is paining
+    - i have tooth ache
+    - i have broken tooth
+    - i have swelling around tooth
+    - my mouth is smelling
+    - i have foul tasting drainage from infected tooth
+    - i have tooth pain while eating
+    - my gums are infected
+    - i have abcessed tooth
+    - my filling inside tooth is damaged
+    - i think i have toothache
+    - i am suffering from toothache
+    - i feel severe toothache
+    - i have been recently suffering with toothache
+    - i am going through toothache problem   
+    - i been suffering from toothache lately  
+    - tooth aching a lot   
+
+- intent: problem_migraine
+  examples: |
+    - i have migraine
+    - i am sensitive to light, sound, or smell
+    - extrmely painful headache
+    - i have mood swings
+    - i am having hallucinations
+    - i have tunnel vision
+    - i am having a very strong headache
+    - my ears are ringing
+    - i am not able to see at all due to pain in side of head
+    - i am extreme pain seizures in head
+    - i am nauseated
+    - i ahve frequent migrain attacks
+    - i have strong pain in back part of head
+    - i have wave sensations in my head
+    - i got migraine
+    - i have been suffering from migraine
+    - i have been lately suffering with migraine
+    - troublesome migraine  
+
+
+- intent: problem_arthritis
+  examples: |
+    - joint pain, tenderness and stiffness
+    - inflammation in and around the joints
+    - restricted movement of the joints
+    - warm, red skin over the affected joint
+    - weakness and muscle wasting
+    - I have arthritis
+    - My hands are paining and they are becoming stiff
+    - My knees are paining and they are becoming stiff
+    - My spine are paining and they are becoming stiff
+    - My heaps are paining and they are becoming stiff
+    - I am having inflammation in and around my hands
+    - I am having inflammation in and around my knees
+    - I am having inflammation in and around my heaps
+    - I am having inflammation in and around my spine
+    - I am feeling warm and have red and swollen skin over my hand
+    - I am feeling warm and have red and swollen skin over my heaps
+    - I am feeling warm and have red and swollen skin over my spine
+    - I am feeling warm and have red  and swollenskin over my knees
+    - I am having weakness and muscle wasting
+    - i think i have arthritis
+    - going through arthritis
+    - troublesome pain of arthritis
+    - i am suffering from arthritis
+    - i have been recently suffering with arthritis
+
+- intent: problem_period-cramps
+  examples: |
+    - lower belly pain during period
+    - lower belly pain after period
+    - lower belly pain before period
+    - belly pain in period
+    - period cramps
+    - cramps during period
+    - cramps after period
+    - cramps before period
+    - menstrual cramps during period
+    - menstrual cramps after period
+    - menstrual cramps before period
+    - abdomen cramps
+    - lower abdomen pain during period
+    - lower abdomen pain after period
+    - lower abdomen pain before period
+    - abdomen pain in period
+
+- intent: problem_vit-d-deficiency
+  examples: |
+    - suffering from vitamin D deficeincy
+    - vitamin d deficiency
+    - low vitamin d
+    - low level of vit d
+    - vit d low
+    - I’m suffering from vitamin D deficiency
+    - im suffering from vit d deficiency
+    - suffering from ricket
+    - ricket
+    - I’m suffering from ricket
+    - im suffering from ricket
+    - my bones are weak
+    - bones are weak due to vitamin d deficiency
+    - bones are weak due to vit d deficiency
+    - bones are weak due to ricket
+
+- intent: problem_anaemia
+  examples: |
+    - haeamoglobin level is low
+    - low level of haeamoglobin
+    - low haeamoglobin
+    - low hb
+    - suffering from anaemia
+    - having anaemia
+    - anaemia
+    - my hemoglobin level is too low
+    - I’m suffering from anaemia
+    - im suffering from anaemia
+    - lower haemoglobin level
+    - low haemoglobin count
+
+- intent: problem_weakness
+  examples: |
+    - im feeling weak
+    - weakness
+    - dizziness
+    - feeling lazy
+    - lazy
+    - Im having dizziness weakness
+    - im having weakness
+    - i'm feeling dizziness
+    - i am feeling dizzy
+    - i am feeling exhausted
+    - i am feeling weekness
+
+- intent: problem_eye-problem
+  examples: |
+    - eye watering
+    - my eyes are waretring
+    - my eyes are watering
+    - right eye watering
+    - left eye watering
+    - both the eyes watering
+    - eyes are getting dry
+    - eye drying
+    - my eyes are getting dry
+    - my eyes are drying
+    - right eye drying
+    - left eye drying
+    - both the eyes drying
+    - i am suffering from eye problem due to long screen time
+
+- intent: problem_ear-pain
+  examples: |
+    - my ears are paining
+    - right ear is paining
+    - left ear is paining
+    - ears paining a lot
+    - ear pain due to long time earphone use
+    - ears are paining for earphone use
+    - i am suffering from tinnitus
+    - my ears are continuously ringing
+    - right ear is ringing
+    - left ear is ringing
+    - ear ringing due to long use of earphone
+    - ear pain due to long time headphone use
+    - ears are paining for headphone use
+    - ear ringing due to long use of headphone
+    - ear pain due to long time earbud use
+    - ears are paining for earbud use
+    - ear ringing due to long use of earbud
+
+- intent: problem_night-blindness
+  examples: |
+    - i am suffering from night blindness
+    - night blindness
+    - i am having night blindness
+    - i do not see clearly during night
+    - i have eyesight problem in the night
+    - eyesight problem at night
+    - low eyesight at night
+    - low eye power at night
+    - blindness at night
+    - blind in night time
+    - night time blindness
+    - i do not see clearly in the dark
+    - i have eyesight problem in the dark
+    - eyesight problem in the dark
+    - low eyesight in the dark
+    - low eye power in the dark
+    - blindness in the dark
+    - blind in the dark
+    - blindness in dark light
+    - difficulty seeing in the dark
+    - difficulty seeing in the night
+    - difficulty seeing at night
+
+
+- intent: problem_mild-heart-disease
+  examples: |
+    - i have heart problems
+    - i have experienced heart atack before
+    - pressure in the chest
+    - tightness in the chest
+    - pain in chest
+    - heart attack
+    - i think i have pain in my left arm
+    - i am feeling heart attack
+    - squeezing in the chest
+    - aching sensation in my chest
+    - pressure in the left arms
+    - tightness in the left arms
+    - squeezing in the arms
+    - aching sensation in my arms
+    - chest pressure
+    - chest tightness
+    - chest pain
+    - chest squeezing
+    - left arm in pressure
+
+- intent: info_on_drugs
+  examples: |
+    - i want to know information about a drug
+    - tell me dosage about a drug
+    - i want to know about a drugs dosage and precautions
+    - tell me about side effects of a drug
+    - can you tell me something about a drug
+    - i am a healthcare professional i need some information
+    - i need side effect data of a drug name
+    - i need to know correct usage of a drug
+
+- intent: problem_drug-info
+  examples: |
+    - give me details about [paracetamol](drug_name)
+    - i want information about [paracetamol](drug_name)
+    - tell me about [crocin](drug_name)
+    - i want to know about [paracetamol](drug_name)
+    - why is [ibuprofen](drug_name) used
+    - whats the dosage of [paracetamol](drug_name)
+    - tell me details about [Clonazepam](drug_name)
+    - give me details about [paracetamol](drug_name)
+    - i want information about [paracetamol](drug_name)
+    - tell me about [crocin](drug_name)
+    - i want to know about [paracetamol](drug_name)
+    - why is [miconazole](drug_name) used
+    - whats the dosage of [mirtazapine](drug_name)
+    - tell me details about [ambien](drug_name)
+    - what are side effects of [ambien](drug_name)
+    - what is correct usage of [crocin](drug_name)
+    - give me information about [paracetamol](drug_name)
+    - [paracetamol](drug_name)
+    - [clonazepam](drug_name)
+
+- lookup: drug_name
+  examples: |
+    - paracetamol
+    - crocin
+    - ibuprofen
+    - clonazepam
+    - copper
+    - mirtazapine
+    - chantix
+    - ambien
+    - actos
+    - enbrel
+    - lexapro
+    - angiox
+    - campral
+    - miconazole
+    - levora
+    - amitriptyline
+    - ciprofloxacin
+    - nuvigil
+    - movantik
+    - viscodyne
+    - kevzara
+    - klonopin
+    - enteragam
+    - oxybutynin
+    - zyclara
+    - seroquel
+    - lisinopril
+    - lofexidine
+    - loratadine
+    - lyrica
+    - melatonin
+    - meloxicam
+    - metformin
+    - methadone
+    - methotrexate
+    - metoprolol
+    - naloxone
+    - naltrexone
+    - naproxen
+    - omeprazole
+    - patisiran
+    - otezla
+    - ozempic
+    - pantoprazole
+    - prednisone
+    - tramadol
+    - trazodone
+    - wellbutrin
+    - xanax
+    - amlodipine
+    - amoxicillin
+    - ativan
+    - benzonatate
+    - brilinta
+    - aquasol
+    - aspirin
+    - lupinfer
+    - dexorange 
+    - rinvoq
+    - albuterol
+    - azithromycin
+    - clarithromycin 
+    - cefuroxime
+    - cefdinir
+    - sertraline
+    - fluoxetine
+    - citalopram
+    - olanzapine
+    - risperidone
+    - aripiprazole
+    - asenapine
+    - clozapine
+    - diphenhydramine
+    - orlistat
+    - phentermine
+    - topiramate
+    - bupropion
+    - liraglutide
+    - calcipotriene
+    - anthralin
+    - ciprofloxacin 
+    - ceftriaxone
+    - sitavig
+    - clotrimazole
+    - econazole
+    - ketoconazole
+    - terbinafine
+    - nystalin
+    - glimepiride
+    - glimepiride-pioglitazone
+    - metformin 
+    - insulin
+    - famotidine
+    - nizatidine
+    - esomeprazole
+    - lansoprazole
+    - gatifloxacin
+    - sumatriptan
+    - diclofenac
+    - midodrine
+    - cCetrizine
+    - benadryl
+
+
+
+- synonym: paracetamol
+  examples: |
+    - Paracetamol
+    - PARACETAMOL
+    - PARAcetmol
+    - pppracetmol
+    - paRaCeTeMoL
+    - PARAcetmoL
+    - pracetemol
+    - acetaminophen
+    - Tylenol
+    - Excedrin
+    - excedrin
+    - Calpol
+    - calpol
+
+- synonym: crocin
+  examples: |
+    - Crocin
+    - CROCIN
+    - CRocin
+    - crosin
+    - ccrocinm
+    - CrOCin
+    - krocin
+    - Panadol
+    - panadol
+
+- synonym: ibuprofen
+  examples: |
+    - Ibuprofen
+    - IBUPROFEN
+    - IbuProFeN
+    - iibuprofenn
+    - iboprofin
+    - iboprofin
+    - Iboprofen
+    - Brufen
+    - dvil
+    - Motrin
+    - Nurofen
+
+- synonym: clonazepam
+  examples: |
+    - Clanazepam
+    - CLoNAZZEPAM
+    - CloNaZePam
+    - clonozepam
+    - klonozepam
+    - Klonazepam
+
+- synonym: copper
+  examples: |
+    - Copper
+    - COPPER
+    - CoPPer
+    - copper suppliments
+    - coper
+
+- synonym: mirtazapine
+  examples: |
+    - Mirtazapine
+    - mirtazapyne
+    - MiRtazApine
+    - mirrtaZappine
+    - MIRTAZAPINE
+    - Remeron 
+    - Remeron Soltab
+    - remeron
+    - remeran
+
+- synonym: chantix
+  examples: |
+    - Chantix
+    - CHANTIX
+    - chANtIX
+    - cchantix
+    - Varenicline 
+    - varenicline
+    - VaRENICLine
+    - chantx
+    - varencline
+
+- synonym: ambien
+  examples: |
+    - Ambien
+    - AMBEIN
+    - ambein
+    - AmbIeN
+    - ambbin
+    - Zolpidem
+    - zolpidym
+
+- synonym: actos
+  examples: |
+    - Actos
+    - ACTOS
+    - Actoos
+    - AcToS
+    - Pioglitazone
+    - Pioglitazone hydrochloride
+    - pioglitazone
+
+- synonym: enbrel
+  examples: |
+    - Enbrel
+    - ENBREL
+    - EnBReL
+    - inbrel
+    - Enbrell
+
+- synonym: lexapro
+  examples: |
+    - Lexapro
+    - LEXAPRO
+    - LeXaPrO
+    - lexxaprro
+    - escitalopram
+    - Cipralex 
+    - cipralex
+    - sipralex
+
+- synonym: angiox
+  examples: |
+    - Angiox
+    - amngiox
+    - anGIOX
+    - Angiomax 
+    - Bivalirudin
+    - bivalirudin
+
+- synonym: campral
+  examples: |
+    - CAMPRAL
+    - Campral
+    - camprall
+    - CaMPraL
+    - Acamprosate
+    - acamprosate
+    - ACAMPROSATE
+
+- synonym: miconazole
+  examples: |
+    - Miconazole
+    - MICONAZOLE
+    - MicONaZoLE
+    - micconazol
+    - Miconazol
+    - Monistat 
+    - monistat
+
+
+- synonym: levora
+  examples: |
+    - Levora
+    - LEVORA
+    - lEvORA
+    - levora
+    - LeVvora
+
+- synonym: amitriptyline
+  examples: |
+    - Amitriptyline
+    - AMITRIPTYLINE
+    - Elavil 
+    - elavil
+    - ellavil
+    - Amitreptline
+    - amItriPTYLYN
+
+- synonym: ciprofloxacin
+  examples: |
+    - Ciprofloxacin
+    - CIPROFLOXACIN
+    - cipprofloxacin
+    - ciprofloxacyn
+    - Cipro
+    - Cipro XR
+    - ProQuin XR
+
+- synonym: nuvigil
+  examples: |
+    - Nuvigil
+    - NUVIGIL
+    - NuVigIL
+    - nuvigil
+    - Armodafinil
+    - armodafinil
+    - armodafinyl
+
+- synonym: movantik
+  examples: |
+    - Movantik
+    - MOVANTIK
+    - movaantik
+    - Naloxegol
+    - naloxegol
+    - moVAnTIK
+    - movantick
+
+- synonym: viscodyne
+  examples: |
+    - Viscodyne
+    - VISCODYNE
+    - viscodine
+    - visCOdiNE
+    - viscodyn
+    - Viscodyn
+
+- synonym: kevzara
+  examples: |
+    - Kevzara
+    - KEVZARA
+    - Sarilumab
+    - sarilumab
+    - kevzra
+    - KeVZAra
+
+- synonym: klonopin
+  examples: |
+    - Klonopin
+    - KLONOPIN
+    - kLOnoPin
+    - clonopin
+    - Clonopin
+
+- synonym: enteragam
+  examples: |
+    - Enteragam
+    - entergam
+    - enteragum
+    - ImmunoLin 
+    - immunolin
+    - Enteragam
+
+- synonym: oxybutynin
+  examples: |
+    - Ditropan
+    - Oxybutynin
+    - OXYBUTYNIN
+    - oXyBuTYNin
+    - ditropan
+    - dytropan
+
+- synonym: zyclara
+  examples: |
+    - Zyclara
+    - ZYCLARA
+    - Zyclara
+
+- synonym: seroquel
+  examples: |
+    - Seroquel
+    - SEROQUEL
+    - seRoQUEL
+    - seroquil
+    - Quetiapine
+    - QUETIAPINE
+    - seroquill
+
+- synonym: lisinopril
+  examples: |
+    - Lisinopril
+    - LISINOPRIL
+    - liSiNoPRil
+
+- synonym: lofexidine
+  examples: |
+    - lofexidine
+    - Lofexidine
+    - Lucemyra 
+    - lucemyra
+    - lofexidyn
+
+- synonym: loratadine
+  examples: |
+    - Loratadine
+    - loratadyn
+    - LORATADINE
+    - Claritin 
+    - claritin
+
+- synonym: lyrica
+  examples: |
+    - Pregabalin
+    - Lyrica
+    - lyrica
+    - LYRICA
+    - lYrica
+    - pregabalin
+
+- synonym: melatonin
+  examples: |
+    - Natrol 
+    - Melatonin
+    - MELATONIN
+    - MelaToNiN
+    - natrol
+    - placebo
+
+- synonym: meloxicam
+  examples: |
+    - Mobic 
+    - MELOXICAM
+    - meloxycam
+    - Vivlodex
+    - Meloxicam Comfort Pac
+    - mobic
+    - Meloxicam
+
+- synonym: metformin
+  examples: |
+    - Metformin
+    - METFORMIN
+    - Glucophage 
+    - glucophage
+    - glucofage
+    - Metaformin
+    - MetaFoRmYN
+
+- synonym: methadone
+  examples: |
+    - Methadone
+    - METHADONE
+    - Dolophine
+    - Methadose 
+    - DOLOPHYNE
+    - dolophyne
+    - methadon
+    - Methadon
+    - Methadose 
+    - methadose
+
+- synonym: methotrexate
+  examples: |
+    - Methotrexate
+    - Metotrexate
+    - METHOTREXATE
+    - amethopterin
+    - MTX
+    - Amethopterin
+    - mtx
+
+- synonym: metoprolol
+  examples: |
+    - Metoprolol
+    - METORPROLOL
+    - metroprolol
+    - MeTOpROLol
+    - metoprollol
+    - Lopressor
+    - lopressor
+    - lopresor
+
+- synonym: naloxone
+  examples: |
+    - Naloxone
+    - NALOXONE
+    - nALoXONe
+    - Narcan 
+    - narcan
+    - nacran
+    - nalloxone
+
+- synonym: naltrexone
+  examples: |
+    - Naltrexone
+    - NALTREXONE
+    - nalterxone
+    - NaLTRexONe
+    - ReVia 
+    - revia
+    - Vivitrol 
+    - vivitrol
+
+- synonym: naproxen
+  examples: |
+    - Naproxen
+    - NAPROXEN
+    - naPRoXen
+    - Aleve 
+    - Apronax 
+    - aleve
+    - apronax
+    - naporxen
+
+- synonym: omeprazole
+  examples: |
+    - Omeprazole
+    - OMEPRAZOLE
+    - Losec
+    - Prilosec 
+    - lossec
+    - prilosec
+    - PRILOSEC
+    - LOSEC
+    - omerparzole
+
+- synonym: patisiran
+  examples: |
+    - Patisiran
+    - PATISIRAN
+    - pateseran
+    - Onpattro
+    - onpatro
+    - paTiSSiRaN
+    - pattisyran
+
+- synonym: otezla
+  examples: |
+    - Otezla
+    - OTEZLA 
+    - otzela
+    - oteZzla
+    - Apremilast
+    - apremilast
+    - APReMILAST
+    - apermilast
+#   - phosphodiesterase inhibitors
+
+- synonym: ozempic
+  examples: |
+    - Ozempic
+    - OZEMPIC
+    - ozempyc
+    - Semaglutide
+    - semaglutide
+    - SeMaGlUTiDe
+    - ozempec
+    - Rybelsus 
+    - rybelsus 
+
+- synonym: pantoprazole
+  examples: |
+    - Pantoprazole
+    - pantaprazol
+    - PANTOPRAZOLE 
+    - PntopRZle
+    - Protonix
+    - protonix
+    - panntaprozool
+#   - proton pump inhibitors (PPIs)
+
+- synonym: prednisone
+  examples: |
+    - PREDNISONE
+    - Prednisone
+    - PreDEnissOnE
+    - Rayos 
+    - Prednisone Intensol
+    - Deltasone 
+    - deltasone
+    - Meticorten
+    - meticorten
+    - Orasone
+    - Pediapred
+    - FloPred
+    - Orapred
+    - Orapred ODT
+    - Millipred
+
+- synonym: tramadol
+  examples: |
+    - Tramadol
+    - TRAMADOL
+    - Ultram 
+    - ultram
+    - TrAmAdOl
+    - tramadul
+    - ULTRAM
+
+- synonym: trazodone
+  examples: |
+    - Trazodone
+    - TRAZODONE
+    - TrazAdOnE
+    - Desyrel
+    - Desyrel Dividose
+    - Oleptro
+    - oleptro
+    - Trazodone D.
+    - Trazodone D
+
+- synonym: wellbutrin
+  examples: |
+    - Wellbutrin
+    - welbrutin
+    - welbutrin
+    - WELLBUTRIN
+    - WeLlBuTrin
+    - Bupropion
+    - bipropion
+    - Zyban
+    - zyban
+
+- synonym: xanax
+  examples: |
+    - Xanax
+    - XANAX
+    - Alprazolam
+    - alprazolam
+    - xannax
+    - XaNax
+#   - triazolobenzodiazepine
+
+- synonym: amlodipine
+  examples: |
+    - Amlodipine
+    - Amlodipine
+    - Norvasc 
+    - norvasc
+    - AMLODIPINE
+    - amladipine
+    - amlodipyn
+    - amlodipin
+    - Katerzia
+    - katerzia
+
+- synonym: amoxicillin
+  examples: |
+    - Amoxicillin
+    - AMOXICILLIN
+    - amoxicilin
+    - AMoxICiLLIN
+    - amoxicilen
+
+- synonym: ativan
+  examples: |
+    - Lorazepam
+    - Ativan
+    - ATIVAN
+    - attivan
+    - AtiVan
+    - lorazepam
+#    - benzodiazepine
+
+- synonym: benzonatate
+  examples: |
+    - Benzonatate
+    - BENZONATATE
+    - Tessalon 
+    - tessalon
+    - tesalon
+    - benzonate
+    - benzyl benzoate
+#    - antitussives
+
+- synonym: brilinta
+  examples: |
+    - Ticagrelor
+    - ticagrelor
+    - Brilinta
+    - BRILINTA
+    - BriLLinTa
+    - brillinta
+#The comments in drug synonyms indicate the class of the drug

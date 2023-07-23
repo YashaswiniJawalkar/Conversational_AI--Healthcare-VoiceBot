@@ -1,0 +1,19 @@
+{
+  "action_fingerprints": {},
+  "python": "3.6.13",
+  "max_histories": [
+    5,
+    null,
+    5
+  ],
+  "ensemble_name": "rasa.core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa.core.policies.memoization.MemoizationPolicy",
+    "rasa.core.policies.rule_policy.RulePolicy",
+    "rasa.core.policies.ted_policy.TEDPolicy"
+  ],
+  "trained_at": "20211114-104202",
+  "rasa": "2.8.9",
+  "tensorflow": "2.6.0",
+  "sklearn": "0.24.2"
+}

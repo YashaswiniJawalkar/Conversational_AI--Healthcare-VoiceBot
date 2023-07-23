@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="31c3054b-1d45-4890-b2a0-e1c7c1a62cee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actions/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../actions/actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../credentials.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../credentials.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/nlu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../data/nlu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/rules.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../data/rules.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/stories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../data/stories.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../endpoints.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../endpoints.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/../graph.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../imgs/bot/headache.png" beforeDir="false" afterPath="$PROJECT_DIR$/../imgs/bot/headache.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20211114-104207.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/20211114-104207.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../results/intent_errors.json" beforeDir="false" afterPath="$PROJECT_DIR$/../results/intent_errors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../start-rasa.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../start-rasa.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/test_stories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../tests/test_stories.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train_test_split/nlg_test_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../train_test_split/nlg_test_data.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train_test_split/nlg_training_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../train_test_split/nlg_training_data.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train_test_split/test_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../train_test_split/test_data.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../train_test_split/training_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../train_test_split/training_data.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Npf8pWyt1gKN9MXpeevg4lkVoi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31c3054b-1d45-4890-b2a0-e1c7c1a62cee" name="Changes" comment="" />
+      <created>1680365788219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680365788219</updated>
+    </task>
+    <servers />
+  </component>
+</project>

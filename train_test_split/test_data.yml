@@ -1,0 +1,224 @@
+version: "3.1"
+nlu:
+- intent: bot_challenge
+  examples: |
+    - are you a human?
+- intent: affirm
+  examples: |
+    - y
+- intent: age-above-18
+  examples: |
+    - above 10
+    - 20+
+- intent: deny
+  examples: |
+    - no way
+- intent: age-below-18
+  examples: |
+    - 18-
+- intent: problem_drug-info
+  examples: |
+    - tell me details about [calpol](drug_name)
+    - tell me about [crocin](drug_name)
+- intent: goodbye
+  examples: |
+    - good night
+    - cu
+- intent: problem_weakness
+  examples: |
+    - Im having dizziness weakness
+    - feeling lazy
+- intent: problem_common-cold
+  examples: |
+    - i have common cold and my body temperature is high
+    - i have running nose
+    - i have cold and cough
+- intent: problem_anaemia
+  examples: |
+    - low hb
+    - suffering from anaemia
+- intent: greet
+  examples: |
+    - hello there
+    - hey
+    - moin
+- intent: problem_cough
+  examples: |
+    - cough
+    - wheezing and shortness of breath
+- intent: problem_ringworm
+  examples: |
+    - ring    -shaped rash
+    - i have red, swollen, itchy skin between the toes
+    - red, scaly, cracked skin
+- intent: problem_pneumonia
+  examples: |
+    - Having fever and shaking chills
+    - I have fever eith green cough
+    - I have rapid and shallow breathing
+- intent: problem_eye-problem
+  examples: |
+    - left eye drying
+    - my eyes are drying
+- intent: problem_insomnia
+  examples: |
+    - I not feel refreshed when you get up
+    - i have been recently suffering with insomnia
+    - how to cure my insomnia
+- intent: problem_vit-d-deficiency
+  examples: |
+    - low level of vit d
+    - my bones are weak
+    - im suffering from vit d deficiency
+- intent: problem_bronchial-asthma
+  examples: |
+    - i am not able to breathe properly
+    - i am wheezing more due to cough and cold
+    - i am suffering from bronchial asthma
+    - i have shortness of breath
+- intent: problem_high-blood-pressure
+  examples: |
+    - i am suffering from high blood pressure
+    - i am having chest pain
+    - i feel tired and exhausted
+- intent: problem_period-cramps
+  examples: |
+    - lower abdomen pain before period
+    - cramps after period
+    - lower abdomen pain after period
+- intent: problem_nasal-blockage
+  examples: |
+    - my nose is blocked
+    - nassal passages swollen with excess fluid
+    - nasal blockage
+- intent: problem_psoriasis
+  examples: |
+    - I am having pain in my joints
+    - I am having small dents in nails
+    - my nails are inflammatory
+    - inflammatory nails
+- intent: problem_obesity
+  examples: |
+    - i am suffering from obesity
+    - going through obesity
+    - I am overweight
+- intent: problem_toothache
+  examples: |
+    - i have been recently suffering with toothache
+    - i think i have toothache
+    - my tooth is paining
+    - tooth aching a lot
+- intent: problem_ear-pain
+  examples: |
+    - i am suffering from tinnitus
+    - ear pain due to long time earbud use
+    - left ear is paining
+- intent: problem_typhoid
+  examples: |
+    - I am experiencing pain in my abdomen
+    - I have high body temperature and vomiting
+    - My body is having chills
+    - going through typhoid
+- intent: problem_psychosis
+  examples: |
+    - I am having hallucinations
+    - i have been recently suffering with psychosis
+    - I get episdoes of depression and mania
+- intent: long-duration
+  examples: |
+    - years
+    - several weeks
+    - /long-duration
+    - half week
+- intent: problem_depression
+  examples: |
+    - i have been recently suffering with depression
+    - I have low mood all the time
+    - I got many traumatical situation
+    - I am usually struggling with stress
+- intent: problem_low-blood-pressure
+  examples: |
+    - dizziness or lightheadedness
+    - i am stressed out
+    - i am suffering from low blood pressure
+    - cold, clammy, pale skin
+- intent: problem_migraine
+  examples: |
+    - i have been lately suffering with migraine
+    - i feel bloated
+    - i am having hallucinations
+- intent: problem_conjunctivits
+  examples: |
+    - my eyes are growing red
+    - wet eyes
+    - how to cure my conjuctivitis
+    - my eyes are watery
+- intent: problem_chickenpox
+  examples: |
+    - I always feel malaise
+    - I always feel itching
+    - loss of appetite
+    - severe chickenpox suffering
+- intent: problem_coronavirus
+  examples: |
+    - i am suffering from corona virus
+    - i don't get the taste of anything
+    - i think i have corona virus
+    - i have lost sense of taste and smell
+    - i have lost smell sensation
+- intent: small-duration
+  examples: |
+    - two
+    - 2
+    - Less than 3 days
+    - Less than 2 days
+- intent: problem_night-blindness
+  examples: |
+    - eyesight problem at night
+    - low eyesight at night
+    - i do not see clearly during night
+    - night time blindness
+- intent: problem_mild-heart-disease
+  examples: |
+    - chest pain
+    - aching sensation in my chest
+    - tightness in the chest
+    - i have heart problems
+    - arms aching
+- intent: problem_gerd
+  examples: |
+    - pain while swallowing
+    - i am having problem in sweeling
+    - i am suffering from gerd
+    - i am having problem in swallowing
+    - regurgitation of food
+- intent: problem_arthritis
+  examples: |
+    - I have arthritis
+    - inflammation in and around the joints
+    - troublesome pain of arthritis
+    - I am having inflammation in and around my heaps
+- intent: problem_diabetes
+  examples: |
+    - i feeling thirsty at all times
+    - feeling apetite
+    - i have been recently suffering with diabetes
+    - i am peeing too much
+    - what to do in diabetes
+- intent: problem_fungal-infection
+  examples: |
+    - scly skn
+    - i have scaly skin
+    - the colour of my skin is becoming red
+    - scaly skn
+    - i have been recently suffering with fungal infection
+    - iching on skin
+- intent: problem_headache
+  examples: |
+    - A painful sensation in any part of the head ranging from sharp to dull
+    - as if thesa hav a tght band around the head
+    - i have ead pain
+    - i have pain in my head
+    - also  headache
+    - my head is aching
+    - as if they have a tight band around the head

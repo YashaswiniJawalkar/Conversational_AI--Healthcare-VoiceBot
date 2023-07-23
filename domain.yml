@@ -1,0 +1,1179 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - session_start
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - small-duration
+  - long-duration
+  - age-below-18
+  - age-above-18
+  - want_to_ask_question
+  - describe_symptoms
+  - info_on_drugs
+  - out_of_scope
+  - problem_headache
+  - problem_headache_tension
+  - problem_cough
+  - problem_nasal-blockage
+  - problem_common-cold
+  - problem_conjunctivits
+  - problem_gerd
+  - problem_diabetes
+  - problem_allergy-rhinitis
+  - problem_fungal-infection
+  - problem_chickenpox
+  - problem_typhoid
+  - problem_psoriasis
+  - problem_obesity
+  - problem_insomnia
+  - problem_psychosis
+  - problem_depression
+  - problem_pneumonia
+  - problem_bronchial-asthma
+  - problem_corona-virus
+  - problem_low-blood-pressure
+  - problem_high-blood-pressure
+  - problem_ringworm
+  - problem_toothache
+  - problem_migraine
+  - problem_arthritis
+  - problem_period-cramps
+  - problem_vit-d-deficiency
+  - problem_anaemia
+  - problem_weakness
+  - problem_eye-problem
+  - problem_ear-pain
+  - problem_night-blindness
+  - problem_mild-heart-disease
+  - problem_drug-info
+  - symptom-yes
+  - symptom-no
+  - shoulder_pain
+  - more
+
+
+entities:
+  - drug_name
+
+slots:
+  drug_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: drug_name
+
+
+responses:
+  utter_greet:
+  - text: "Hii! I am Medicbot, your healthcare assistant"
+  - text: "hi i am medicbot. how can i help you?"
+  - text: Hi and Welcome...............' Medicbot AI Assistant ' is ready to help you here.
+
+  utter_select_one:
+    - text: "Please describe your symptoms (or) ask info about  drugs."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+
+  utter_goodbye:
+    - text: "Goodbye! Have a good day"
+
+
+  utter_iamabot:
+  - text: "I am a healthcare assistant chatbot, powered by RASA"
+
+  utter_ask_question:
+  - text: Ok Sure, you may continue to ask me
+
+  utter_check_symptoms:
+  - text: "Please describe the symptoms you are experiencing"
+
+  utter_ask_about_drug:
+  - text: "I can provide information, dosage and side effects of a drug. Please provide name of the drug"
+
+  utter_any-other-symptom:
+  - text: any other symptoms for your problem?
+
+  utter_say-more-symptoms:
+  - text: say your another symptom.
+
+  utter_anything-else:
+  - text: "Is there anything else I can help you with?"
+
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+  utter_ask-cold:
+  - text: "Are you feeling cold?"
+
+  utter_ask-nasal-blockage:
+  - text: "Do you have nasal Blockage?"
+
+  utter_ask-duration:
+  - text: "Duration of your prevailing symptoms"
+
+
+  utter_more:
+  - text: "Can you please enter more symptoms plzz"
+
+  utter_ask-age:
+  - text: "Which age group you belong too? below 18 or above 18"
+  - text: "what is your age ? below 18 or above 18"
+
+
+  utter_visit-doctor:
+  - text: "For longer duration of symptoms, please visit a doctor"
+
+  utter_headache_question:
+  - text: "tension or migraine"
+
+  utter_headache-a:
+  - text: take a 100mg dosage of Crocin Pain Relief for headache
+  utter_headache-b:
+  - text: take a 500mg dosage of Crocin Pain Relief for headache
+  utter_headache-advice:
+  - text: try to relax, drink plenty of water, get rest, try cold pack
+
+  utter_nasal-blockage-a:
+  - text: You have nasal-blockage. You should use nasivion nasal spray when your nose is blocked.
+  utter_nasal-blockage-b:
+  - text: You have nasal-blockage. You should use nasivion nasal spray when your nose is blocked.
+  utter_nasal-blockage-advice:
+  - text: use steam vapourizer and avoid cold baths
+
+  utter_cough-a:
+  - text: You have cough. You should take 5mL dosage of Benadryl Syrup when you get cough
+  utter_cough-b:
+  - text: You have cough. You should take 10mL dosage of Benadryl Syrup when you get cough
+  utter_cough-advice:
+  - text: drink ginger tea or honey tea to avoid cough
+
+  utter_common-cold-a:
+  - text: "You have a cold. You should take a 5mg dosage of Cetrizine after your dinner, if the problem persists."
+
+  utter_common-cold-b:
+  - text: "You have a cold. You should take a 10mg dosage of Cetrizine after your dinner, if the problem persists."
+
+  utter_common-cold-advice:
+  - text: "Stay hydrated. Water, Warm lemon water with honey helps loosen congestion and prevents dehydration"
+
+  utter_low-blood-pressure-a:
+  - text: You have low BP. You should take 7mg dosage of  midodrine (Orvaten) for every 8 hours, it helps to narrow blood vessels to raise blood pressure.
+
+  utter_low-blood-pressure-b:
+  - text: You have low BP. You should take 10mg dosage of midodrine (Orvaten) for every 8 hours, it helps to narrow blood vessels to raise blood pressure.
+
+  utter_low-blood-pressure-advice:
+  - text: Drink plenty of water, eat a balanced diet, eat smaller meals, avoid alcohol, check your blood sugar several times a day consult doctor incase of emergency.
+  utter_high-blood-pressure-a:
+  - text: You have high BP. You should take 5mg dosage of Lisinopril (Prinivil, Zestril). Take it after having lunch.
+  utter_high-blood-pressure-b:
+  - text: You have high BP. You should take 10mg dosage of Lisinopril (Prinivil, Zestril). Take it after having lunch.
+  utter_high-blood-pressure-advice:
+  - text: Exercise regularly, loose extra weight, eat a healthy diet, reduce sodium in your diet, quit smoking, limit or avoid alcohol consumption.
+  utter_ringworm-a:
+  - text: You have ringworm. You should apply lotrimin ointment on the infected area.
+  utter_ringworm-b:
+  - text: You have ringworm. You should apply lotrimin ointment on the infected area.
+  utter_ringworm-advice:
+  - text: Wash the infected area regularly. Do not use wet clothes.
+  utter_toothache-a:
+  - text: You have toothache. You should take one tablet of Diclofenac when you get pain, do visit a dentist.
+  utter_toothache-b:
+  - text: You have toothache. You should take one tablet of Diclofenac when you get pain, do visit a dentist.
+  utter_toothache-advice:
+  - text: rinse your mouth with warm water. Use dental floss to remove any food particles or plaque wedged between your teeth.
+  utter_migraine-a:
+  - text: You have migraine. You should take 25mg dosage of sumatriptan when you get pain.
+  utter_migraine-b:
+  - text: You have migraine. You should take 50mg dosage of sumatriptan when you get pain.
+  utter_migraine-advice:
+  - text: try a cold pack, get some caffeine and practice relaxation.
+  utter_conjunctivits-a:
+  - text : You have conjunctivitis. Take gatifloxacin (Zymaxid) 2 drops twice a day .
+  utter_conjunctivits-b:
+  - text : You have conjunctivitis. Take ciprofloxacin 2 drops thrice a day .
+  utter_conjunctivits-advice:
+  - text : Avoiding contact with infected people, disinfection of household surfaces, and good hygienic practices.
+  utter_gerd-a:
+  - text : You have gerd. Take antacids to reduce pepsids. Take PPIs eg esomeprazole (Nexium) omeprazole (Prilosec) lansoprazole (Prevacid) for long terms 2 dozes daily .
+  utter_gerd-b:
+  - text : You have gerd. Take famotidine (Pepcid) and nizatidine 10mg tablets twice a day .
+  utter_gerd-advice:
+  - text : If not taken care by medications, consult for surgery like LINX or TIF.
+  utter_diabetes-a:
+  - text : You have diabetes. Take 5-6 mg dozes of metformin (Glumetza, others), liraglutide (Victoza) and insulin daily basis, do visit a doctor.
+  utter_diabetes-b:
+  - text : You have diabetes. Take 2-5mg of glimepiride (Amaryl), glimepiride-pioglitazone (Duetact) dozes daily, do visit a doctor.
+  utter_diabetes-advice:
+  - text : Choose healthier carbohydrates, Eat less salt, Eat more fruits, Cut down sugar.
+  utter_fungal-infection-a:
+  - text : You have fungal infection. Take 5-10mg of 1% cream Terbinafine 1 or 2 times a day, or nystalin ointment once a day.
+  utter_fungal-infection-b:
+  - text : You have fungal infection. Have 1-2 dozes of any of clotrimazole, econazole, ketoconazole.
+  utter_fungal-infection-advice:
+  - text : Keep the affected area clean and dry. wearing loose-fitting clothing or shoes that allow your skin to breathe
+  utter_chickenpox-a:
+  - text : You have chickenpox. Take 10mg tablets daily acyclovir eg Sitavig 1doze daily.
+  utter_chickenpox-b:
+  - text : You have chickenpox. Take 5mg tablets of Zovirax, apply calamine lotion 2mg daily.
+  utter_chickenpox-advice:
+  - text : Wear mittens to prevent scratching, Take baking soda baths, Use chamomile compresses, Have approved pain relievers
+  utter_typhoid-a:
+  - text : You have typhoid. azithromycin given for 7 days at a dosage of 10 mg/kg/day, maximum 500mg a day.
+  utter_typhoid-b:
+  - text : You have typhoid. Take 2-3mg tablets Ciprofloxacin (Cipro), Azithromycin (Zithromax) or Ceftriaxone on daily basis a little amount.
+  utter_typhoid-advice:
+  - text : Take antibiotic, drinking adequate water. Consult a doctor
+  utter_psoriasis-a:
+  - text : You have psoriasis. Take 2-3mg dozes Anthralin, , Coal tar daily.
+  utter_psoriasis-b:
+  - text : You have psoriasis. Have Calcipotriene (a form of vitamin D) 10mg daily.
+  utter_psoriasis-advice:
+  - text : You can apply cream, lotion, or ointments. use cream with clobetasol
+  utter_obesity-a:
+  - text : You have obesity. Orlistat is most used medicine with 10-15mg dozes daily, do visit a doctor.
+  utter_obesity-b:
+  - text : You have obesity. Take Orlistat (Alli, Xenical) Phentermine and topiramate (Qsymia), Bupropion and naltrexone (Contrave), Liraglutide (Saxenda, Victoza) 1doze daily, do visit a doctor.
+  utter_obesity-advice:
+  - text : Do exercise and yoga. Have medications and consult for weight loss surgery.
+  utter_insomnia-a:
+  - text : You have insomnia. Take Antihistamines like diphenhydramine (Nytol, Sominex) of 2-3mg, 2doze daily.
+  utter_insomnia-b:
+  - text : You have insomnia. Have 3.75mg dozes daily of sleeping pills.
+  utter_insomnia-advice:
+  - text : Wake up at the same time, Limit naps, Eliminate alcohol.
+  utter_psychosis-a:
+  - text : You have psychosis. Take atypical mild 1-2 dozes antipsychotics, which include aripiprazole (Abilify), asenapine (Saphris), clozapine (Clozaril) 4mg daily.
+  utter_psychosis-b:
+  - text : You have psychosis. Have 2-3mg dozes Antipsychotic drugs like olanzapine and risperidone 10mg dozes daily.
+  utter_psychosis-advice:
+  - text : Don't panic or overreact, Do listen non-judgmentally.
+  utter_depression-a:
+  - text : You have depression. Take 15-20mg of fluoxetine (Prozac™) is most effective, with 5mg dozes daily basis.
+  utter_depression-b:
+  - text : You have depression. Take 1tablet of sertraline (Zoloft), fluoxetine (Prozac, Sarafem), citalopram (Celexa) 10-15mg dozes daily.
+  utter_depression-advice:
+  - text : Blend of cognitive behavioral therapy, interpersonal therapy, and psychodynamic therapy can be used.
+  utter_pneumonia-a:
+  - text : You have pneumonia. Take Beta-lactam antibiotics (eg, amoxicillin, cefuroxime, cefdinir) 10-15mg daily.
+  utter_pneumonia-b:
+  - text : You have pneumonia. Take 10-12mg dozes daily Macrolides include azithromycin (Zithromax®) and clarithromycin (Biaxin®).
+  utter_pneumonia-advice:
+  - text : You can try  amoxicillin, azithromycin, or fluoroquinolones too.
+  utter_coronavirus-advice:
+  - text: you have symptopms of covid-19. Reach out to your nearest hostpital and get checked for covid-19. Maintain distance of atleast 6ft from others.
+  utter_bronchial-asthma-a:
+  - text: You have bronchial asthma. Inhale Albuterol, USP Inhalation Aerosol when you are going to be around asthma triggers. Do visit a doctor.
+  utter_bronchial-asthma-b:
+  - text: You have bronchial asthma. Inhale Albuterol, USP Inhalation Aerosol when you are going to be around asthma triggers. Do visit a doctor.
+  utter_bronchial-asthma-advice:
+  - text: Keep fit by exercising. Be in control, get an asthma action plan. Avoid smoking. Prevent Cold.
+  utter_arthritis-a:
+  - text: You have arthritis.Take one pill of Rinvoq(15 mg tablet) daily . Do visit a doctor.
+  utter_arthritis-b:
+  - text: You have arthritis.Take one pill of Rinvoq(15 mg tablet) daily . Do visit a doctor.
+  utter_arthritis-advice:
+  - text: Manage your weight. Use hot and cold therapy. Use meditation to cope with pain. Add turmeric to dishes.
+  utter_period-cramps-a:
+  - text: Take ibuprofen tablet at regular doses starting the day before you expect your period to begin
+  utter_period-cramps-b:
+  - text: Take ibuprofen tablet at regular doses starting the day before you expect your period to begin
+  utter_period-cramps-advice:
+  - text: Keep a warm heating pad on belly. Do yoga for period cramps
+  utter_allergy-a:
+  - text: You have allergy, You should take anti-histamine tablet once daily until cured.
+  utter_allergy-b:
+  - text: You have allergy, You should take anti-histamine tablet twice daily until cured.
+  utter_allergy-advice:
+  - text: Try to figure out what causes your allergy and stay away from those substances
+  utter_anaemia-a:
+  - text: You have anaemia, Please take Lupinfer 50mg twice daily after food and take dexorange syrup twice daily
+  utter_anaemia-b:
+  - text: You have anaemia, Please take Lupinfer 100mg twice daily after food and take dexorange syrup twice daily
+  utter_anaemia-advice:
+  - text: Eat healthy food, check haemoglobin level in every six month
+  utter_weakness-a:
+  - text: Take a multi-vitamin syrup once a day, check your haemoglobin level, if necessary visit a doctor
+  utter_weakness-b:
+  - text: Take a multi-vitamin capsule twice a day, check your haemoglobin level, if necessary visit a doctor
+  utter_weakness-advice:
+  - text: Have a balanced diet, do yoga in the morning, get proper sleep
+  utter_eye-problem-a:
+  - text: Lower your screen time and immediatly get your eyes tested
+  utter_eye-problem-b:
+  - text: Lower your screen time and immediatly get your eyes tested, use itone eye drop twice a day
+  utter_eye-problem-advice:
+  - text: Do not spend much screen time, wash eyes frequently with clean water, do some yoga for eyes
+  utter_ear-pain-a:
+  - text: Do not use earphones for longer time, if it's bleeding go to a doctor
+  utter_ear-pain-b:
+  - text: Do not use earphones for longer time, you may use otovin ear drop. If pains a lot, take one aspirin tablet, if it's bleeding go to a doctor
+  utter_ear-pain-advice:
+  - text: Use less earphone, use a warm, moist compress on the ear.
+  utter_night-blindness-a:
+  - text: You have symptoms of night Blindness. Take aquasol A once a day for one month
+  utter_night-blindness-b:
+  - text: You have symptoms of night Blindness. Take aquasol A twice daily for one month
+  utter_night-blindness-advice:
+  - text: Eat vitamin A-rich foods including dark green leafy vegetables, carrots, potatoes, dairy products, broccoli, squash, and fish
+  utter_mild-heart-disease-a:
+  - text: Take one aspirin tablet quickly and go to the nearest hospital
+  utter_mild-heart-disease-b:
+  - text: Take one aspirin tablet quickly and go to the nearest hospital as soon as possible
+  utter_mild-heart-disease-advice:
+  - text: You have heart disease, Stop smoking, control blood pressure, control cholesterol levels, check for diabetes, eat a heart-healthy diet, control your stress level.
+  utter_vit-d-deficiency-a:
+  - text: you have vitaminD deficeincy. You should take vitamin D tablet once a week
+  utter_vit-d-deficiency-b:
+  - text: you have vitaminD deficeincy. You should take vitamin D tablet once a week
+  utter_vit-d-deficiency-advice:
+  - text: Please get sunlight for at least half an hour day to get proper vitamin D
+
+  utter_drug_info:
+    - text: "I currently do not have information about {drug_name}"
+    - text: "I currently do not have information about this drug"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: clonazepam
+      text: "clonazepam is approved for the treatment of panic disorder"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: copper t
+      text: "It is used for Birth Control"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: mirtazapine
+      text: "mirtazapine is an antidepressant.It is used for Depression"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: chantix
+      text: "chantix is the best medicine to help adults stop smoking"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ambien
+      text: "ambien (zolpidem) is a sedative and used to treat a certain sleep problem (insomnia) in adults"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: actos
+      text: "actos is the best medicine used to treat the symptoms of type 2 diabetes mellitus."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: enbrel sureclick
+      text: "enbrel sureclick is used alone or in combination with an immunosuppressant (such as methotrexate) to treat certain types of arthritis (such as rheumatoid, psoriatic, juvenile idiopathic, and ankylosing spondylitis)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lexapro
+      text: "lexapro is an antidepressant and used to treat depression and anxiety"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: angiox
+      text: "angiox is indicated as an anticoagulant in adult patients undergoing percutaneous coronary intervention (PCI)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: campral
+      text: "campral is used along with counseling and support to help people who are alcohol dependent not drink alcohol"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: miconazole
+      text: "miconazole is used to treat vaginal yeast infections in adults and children 12 years of age and older"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: levora
+      text: "levora is used as contraception to prevent pregnancy"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: amitriptyline
+      text: "amitriptyline is used for treating pain,to treat nerve pain (neuralgia) and back pain as well as to help prevent migraine attacks"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ciprofloxacin
+      text: "ciprofloxacin is used to treat bacterial infections in many different parts of the body"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: nuvigil
+      text: "nuvigil is the best medicine used to treat the symptoms of Obstructive Sleep Apnea, Narcolepsy and Shift Work Sleep Disorder"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: movantik
+      text: "movantik is used to treat constipation caused by opioid medications in people with ongoing pain that is not caused by cancer"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: viscodyne-d syrup
+      text: "viscodyne-d syrup is a combination medicine used in the treatment of dry cough"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: kevzara
+      text: "kevzara is used to treat adult patients with moderately to severely active rheumatoid arthritis (RA)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: klonopin
+      text: "klonopin slows down brain activity to help users feel relaxed"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: enteragam
+      text: "enteragam is a medical food used to treat patients with bowel problems and frequent diarrhea"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: oxybutynin
+      text: "oxybutynin works by relaxing the muscles around bladder"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: zyclara
+      text: "zyclara is used to treat actinic keratoses (AK) which are precancerous growths on the skin. AK are caused by too much sun exposure.Treating this condition can decrease the risk of complications from them"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: seroquel
+      text: "seroquel is used to treat certain mental/mood conditions (such as schizophrenia, bipolar disorder, sudden episodes of mania or depression associated with bipolar disorder)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lisinopril
+      text: "lisinopril is considered to be a gold standard drug in the treatment of high blood pressure, and is also used to treat heart failure and after heart attacks"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lofexidine
+      text: "lofexidine is used to manage opioid withdrawal symptoms (e.g., sick feeling, stomach cramps, muscle spasms or twitching, cold sensation)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: loratadine
+      text: "loratadine is an antihistamine medicine that helps with the symptoms of allergies. It's used to treat: hay fever. conjunctivitis (red, itchy eyes) eczema"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lyrica
+      text: "lyrica is used to treat pain caused by nerve damage due to diabetes, shingles (herpes zoster) infection, or spinal cord injury"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: melatonin
+      text: "melatonin sends messages to the receptor agonist in the brain and other areas of the body to help control the sleep and wake cycles. It is an effective treatment for jet lag"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: meloxicam
+      text: "meloxicam is used to treat arthritis. It reduces pain, swelling, and stiffness of the joints"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: metformin
+      text: "metformin is the first-line medication for the treatment of type 2 diabetes, particularly in people who are overweight. It is also used in the treatment of polycystic ovary syndrome"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: methadone
+      text: "methadone is a powerful drug used for pain relief and treatment of drug addiction"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: methotrexate
+      text: "methotrexate is a chemotherapy agent and immune-system suppressant.It is used to treat cancer, autoimmune diseases, and ectopic pregnancy and for medical abortions"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: metoprolol
+      text: "metoprolol is a selective β₁ receptor blocker medication.It is used to treat high blood pressure, chest pain due to poor blood flow to the heart, and a number of conditions involving an abnormally fast heart rate"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: naloxone
+      text: "naloxone blocks or reverses the effects of opioid medication, including extreme drowsiness, slowed breathing, or loss of consciousness"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: naltrexone
+      text: "naltrexone used to manage alcohol or opioid use disorder by reducing cravings and feelings of euphoria associated with substance use disorder"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: naproxen
+      text: "naproxen is used to relieve pain from various conditions such as headache, muscle aches, tendonitis, dental pain, and menstrual cramps"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: omeprazole
+      text: "omeprazole is used to treat symptoms of (GERD) and other conditions caused by excess stomach acid.It is also used to promote healing of erosive esophagitis"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: patisiran
+      text: "patisiran is a medication for the treatment of polyneuropathy in people with hereditary transthyretin-mediated amyloidosis"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: otezla
+      text: "otezla treatment of certain types of psoriasis and psoriatic arthritis"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ozempic
+      text: "ozempic is a prescription medicine used to treat the symptoms of Type 2 Diabetes Mellitus"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: pantoprazole
+      text: "pantoprazole is a proton pump inhibitor used for the treatment of stomach ulcers, short-term treatment of erosive esophagitis due to GERD"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: prednisone
+      text: "prednisone is used to treat conditions such as arthritis, blood disorders, breathing problems, severe allergies, skin diseases, cancer, eye problems"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: tramadol
+      text: "tramadol is an opioid pain medication, used to relieve moderate to moderately severe pain, including pain after surgery"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: trazodone
+      text: "trazodone is an antidepressant medication, used to treat major depressive disorder, anxiety disorders, schizophrenia, trouble falling asleep"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: viagra
+      text: "viagra is used to treat erectile dysfunction and pulmonary arterial hypertension"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: wellbutrin
+      text: "wellbutrin is an atypical antidepressant primarily used to treat major depressive disorder and to support smoking cessation"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: xanax
+      text: "xanax is used to treat anxiety and panic disorders. It works by decreasing abnormal excitement in the brain"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: amlodipine
+      text: "amlodipine is a calcium channel blocker medication used to treat high blood pressure and coronary artery disease"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: amoxicillin
+      text: "amoxicillin is an antibiotic used to treat a number of bacterial infections (eg:middle ear infection, strep throat, pneumonia, skin infections, and urinary tract infections)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ativan
+      text: "ativan is used to treat anxiety disorders, trouble sleeping, severe agitation, active seizures including status epilepticus, alcohol withdrawal, and chemotherapy-induced nausea and vomiting"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: benzonatate
+      text: "benzonatate is used to treat coughs caused by the common cold and other breathing problems (e.g., pneumonia, bronchitis, emphysema, asthma)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: brilinta
+      text: "brilinta is medication used for the prevention of stroke, heart attack and other events in people with acute coronary syndrome"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: paracetamol
+      text: "paracetamol is a common painkiller used to treat aches and pain. It can also be used to reduce a high temperature"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: crocin
+      text: "crocin provides symptomatic relief from mild to moderate pain e.g from headache, migraine, toothache and musculoskeletal pain"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ibuprofen
+      text: "ibuprofen is used to relieve pain from various conditions such as headache, dental pain, menstrual cramps, muscle aches, or arthritis"
+
+  utter_drug_usage:
+    - condition:
+        - type: slot
+          name: drug_name
+          value: clonazepam
+      text: "Dosage amount should be 1.5 mg per day in 3 doses for adults and 0.01 to 0.03 mg/day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: copper t
+      text: "Dosage amount should be 1,400 mcg for men and 1,100 mcg for women for adults and 1.5 to 2.5 milligrams (mg) per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: mirtazapine
+      text: "Dosage amount should be between 15 and 45 mg, 1 times a day for adults and it should not be given for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: chantix
+      text: "Dosage amount should be one 0.5-milligram tablet once a day for 3 days for adults and 0.5mg twice daily for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ambien
+      text: "Dosage amount should be either 5 or 10 mg, taken only once per night for adults and 5 mg once daily for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: actos
+      text: "Dosage amount should be 15 mg once daily for adults and it is not recommended for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: enbrel sureclick
+      text: "Dosage amount should be 50 mg given twice a week for 3 months for adults and  50 mg given once per week for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lexapro
+      text: "Dosage amount should be 10 mg once daily for adults and 5 mg once daily for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: angiox
+      text: "Dosage amount should be 5mg/mL injection, 250mg/vial powder for adults and  0.25 mg/kg/h for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: campral
+      text: "Dosage amount should be Two 333mg tablets daily for adults and  it is not recommended for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: miconazole
+      text: "Dosage amount should be Insert 1200 mg suppository intravaginally at bedtime for 1 day for adults and adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: levora
+      text: "Dosage amount should be 1 tab daily for 28 days for adults and it should not be given for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: amitriptyline
+      text: "Dosage amount should be 1 tab daily for 28 days for adults and 25 mg to 50 mg daily for aged above 11 "
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ciprofloxacin
+      text: "Dosage amount should be 250 mg Tablet every 12 hours for adults and 10 mg/kg three times daily for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: nuvigil
+      text: "Dosage amount should be 150 to 250 mg orally once a day for adults and it is not recommended for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: movantik
+      text: "Dosage amount should be 12.5-25 mg once daily in the morning for adults and it is not recommended for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: viscodyne-d syrup
+      text: "Dosage amount should be 2 nasal aerosol sprays in each nostril once a day for adults and it is not recommended for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: kevzara
+      text: "Dosage amount should be 500-1000 cells/mm³ for adults and it is not recommended for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: klonopin
+      text: "Dosage amount should be 0.25--1 mg twice daily for adults and 1.5 mg orally per day divided into 3 doses for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: enteragam
+      text: "Dosage amount should be One packet per day, taken as a single dose for adults and ½ packet daily for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: oxybutynin
+      text: "Dosage amount should be 25 mg twice daily for adults and 400-800 mg per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: zyclara
+      text: "Dosage amount should be once a day upto 8 weeks for adults and it is not recommended for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: seroquel
+      text: " Dosage amount should be 150-750 mg/day for adults and 400-800 mg/day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lisinopril
+      text: "Dosage amount should be 5-10mg once daily for adults and 0.07 mg per kilogram (kg) & body weight dependent for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lofexidine
+      text: "Dosage amount should be  0.54 mg orally 4 times a day for adults and it is not recommended for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: loratadine
+      text: "Dosage amount should be 10 mg per day for adults and 5 mg/day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lyrica
+      text: "Dosage amount should be 75 to 150 mg per day in 2 doses for adults and 10 mg/kg/day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: melatonin
+      text: "Dosage amount should be 1-10mg per day for adults and 2.5 - 3mg per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: meloxicam
+      text: "Dosage amount should be 7.5 mg once a day for adults and 0.125 mg per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: metformin
+      text: "Dosage amount should be 500 mg orally in 2 doses per day for adults and 0.125 mg per for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: methadone
+      text: "Dosage amount should be 2.5 mg orally every 8 to 12 hours per day for adults and  0.15 to 0.3 mg/kg/day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: methotrexate
+      text: "Dosage amount should be 2.5 milligrams (mg) 2 to 4 times a week for adults and 10–15 mg/m2/week for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: metoprolol
+      text: "Dosage amount should be 450 mg per day for adults and 1 mg/kg & body weight dependent for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: naloxone
+      text: "Dosage amount should be 400 to 2000 micrograms (0.4mg to 2mg) per day for adults and 1 mg/kg & body weight dependent for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: naltrexone
+      text: "Dosage amount should be 50 mg orally per day for adults and 4.5 mg per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: naproxen
+      text: "Dosage amount should be 1500 mg orally once a day  for adults and 10 mg/kg divided into two doses for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: omeprazole
+      text: "Dosage amount should be 20 or 40 mg per day in 3 doses for adults and 2.5 mg orally per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: patisiran
+      text: "Dosage amount should be 300 micrograms per kg body weight for adults and 10 mg/5 mL solution in a single-dose per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: otezla
+      text: "Dosage amount should be 30 mg taken orally per day in 2 doses for adults and 20-30mg per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ozempic
+      text: "Dosage amount should be 0.25 mg subcutaneous injection once weekly for 4 weeks for adults and it is Not recommendedper for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: pantoprazole
+      text: "Dosage amount should be 40 mg per day for adults and  20 mg or 40 mg per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: prednisone
+      text: "Dosage amount should be 2.5 to 10 mg/day for adults and  0.14 to 2 mg per kilogram (kg) of body weight per day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: tramadol
+      text: "Dosage amount should be 25 mg per day in one dose for adults and 1–2 mg kg–1 per day in 4 doses for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: trazodone
+      text: "Dosage amount should be 150 mg/day orally divided every 8-12 hours for adults and 100 mg IR three times daily for 7 days for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: viagra
+      text: "Dosage amount should be 50 mg before 1 hour of sexual activity for adults and not recommended for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: wellbutrin
+      text: "Dosage amount should be 100 mg orally twice a day for adults and  1.4 to 6 mg/kg/day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: xanax
+      text: "Dosage amount should be 0.25 to 0.5 milligram (mg) 3 times a day for adults and  0.50 mg to 1.5 mg daily for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: amlodipine
+      text: "Dosage amount should be 5-10mg daily for adults and 5 milligrams (mg) once a day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: amoxicillin
+      text: "Dosage amount should be 250 mg orally every 8 hours for adults and 15 mg/kg/day for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ativan
+      text: "Dosage amount should be 2 to 3 mg orally per day for adults and 2 to 4 milligrams (mg) for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: benzonatate
+      text: "Dosage amount should be 100 mg to 200 mg orally three times a day for adults and 100 mg or 200 mg capsule three times for aged above 12"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: brilinta
+      text: "Dosage amount should be 90 mg twice daily for adults and 2 doses, 0.125-2.25 mg/kg daily for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: paracetamol
+      text: "Dosage amount should be one or two 500mg tablets up to 4 times in 24 hours for adults and 10-15 mg per kilogram of weight for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: crocin
+      text: "Dosage amount should be 10-15 mg per kilogram of weight for adults and 10-15 mg per kilogram of weight for adolescent"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ibuprofen
+      text: "Dosage amount should be 200 to 400 mg orally every 4 hours as needed for adults and 100mg/5ml for adolescent"
+
+  utter_drug_side_effects:
+    - condition:
+        - type: slot
+          name: drug_name
+          value: clonazepam
+      text: "side effects include Drowsiness, dizziness, tiredness, loss of coordination, or increased saliva production"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: copper t
+      text: "side effects include irregular periods,heavier or longer periods,more or worse cramping during your periods "
+    - condition:
+        - type: slot
+          name: drug_name
+          value: mirtazapine
+      text: "side effects are Drowsiness,Weight gain,Dry mouth,Constipation,Lack of energy"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: chantix
+      text: "side effects are nausea,constipation, gas,sleep problems (insomnia)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ambien
+      text: "side effects are Rapid heartbeat,Nausea,Vomiting,Diarrhea,Loss of appetite"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: actos
+      text: "side effects are upper respiratory tract infection, headache, sinus infection, muscle pain and sore throat."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: enbrel sureclick
+      text: "side effects are infection,common cold"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lexapro
+      text: "side effects are painful urination,dizziness, drowsiness, tiredness, weakness,sleep problems (insomnia)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: angiox
+      text: "side effects are pain in the back or pelvis,nausea,vomiting,stomach pain"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: campral
+      text: "side effects are diarrhea,nausea,vomiting,gas "
+    - condition:
+        - type: slot
+          name: drug_name
+          value: miconazole
+      text: "side effects are itching, peeling, or dry skin"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: levora
+      text: "side effects are nausea,vomiting,stomach cramping/bloating,dizziness"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: amitriptyline
+      text: "side effects are nightmares,headaches,dry mouth,drowsiness"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ciprofloxacin
+      text: "side effects are nausea,vomiting,stomach pain,heartburn,diarrhea,vaginal itching and/or discharge,pale skin,unusual tiredness,sleepiness"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: nuvigil
+      text: "side effects are a skin rash, fever, swollen glands, flu-like symptoms, unusual bruising, yellowing of skin or eyes (jaundice), bruising, severe tingling"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: movantik
+      text: "side effects are stomach/abdominal pain, diarrhea, nausea, gas (flatulence), vomiting, headache, increased or excessive sweating, chills"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: viscodyne-d syrup
+      text: "side effects are Stomach pain, Dizziness, Drowsiness, Restlessness, Nausea or vomiting, Lightheadedness"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: kevzara
+      text: "side effects are low white blood cell count (neutropenia), upper respiratory infections, nasal congestion, runny nose, sore throat,urinary tract infections"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: klonopin
+      text: "side effects are drowsiness, dizziness, weakness, unsteadiness, depression, loss of orientation, headache, sleep disturbances"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: enteragam
+      text: "side effects are mild nausea, constipation, flatulence, stomach cramps, headache, increased urination"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: oxybutynin
+      text: "side effects are dry mouth,blurred vision,dry eyes, nose, or skin, stomach pain, constipation, diarrhea, nausea"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: zyclara
+      text: "side effects are headache,treatment area skin reactions (irritation, pain, itching, dryness, flaking, scabbing, crusting, redness, hardening of skin, changes in color of treated skin)"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: seroquel
+      text: "side effects are mood or behavior changes, constipation, stomach pain, upset stomach, nausea, vomiting, drowsiness, dizziness"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lisinopril
+      text: "side effects are cough, dizziness, headache, excessive tiredness, nausea, diarrhea, weakness, sneezing"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lofexidine
+      text: "side effects are dizziness on standing, slow heart rate, low blood pressure (hypotension), dizziness, drowsiness, sleepiness, and dry mouth"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: loratadine
+      text: "side effects are headache, dry mouth, nosebleed, sore throat, mouth sores, difficulty falling asleep or staying asleep, nervousness, weakness"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: lyrica
+      text: "side effects are Loss Of Muscle Coordination, Dry Mouth, Difficulty Concentrating, Dizziness"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: melatonin
+      text: "side effects are daytime drowsiness, dizziness, weakness, or confusion. vivid dreams, nightmares. feeling depressed, anxious, irritable"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: meloxicam
+      text: "side effects are abdominal pain, diarrhea, indigestion or heartburn, nausea, dizziness, headache, itching or rash"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: metformin
+      text: "side effects are physical weakness (asthenia),diarrhea, gas, symptoms of weakness, muscle pain (myalgia),upper respiratory tract infection"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: methadone
+      text: "side effects are Nausea, vomiting, constipation, lightheadedness, dizziness, dry mouth, drowsiness, or sweating"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: methotrexate
+      text: "side effects are feeling sick, headaches, vomiting, diarrhoea, shortness of breath, mouth ulcers, minor hair loss and hair thinning"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: metoprolol
+      text: "side effects are dizziness or lightheadedness, tiredness, depression, nausea, dry mouth, stomach pain, vomiting"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: naloxone
+      text: "side effects are gastrointestinal disorders, aggressiveness, tachycardia, shivering, sweating and tremor"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: naltrexone
+      text: "side effects are Abdominal or stomach cramping or pain,anxiety, nervousness, restlessness or trouble sleeping, headache"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: naproxen
+      text: "side effects are constipation, diarrhea, gas, excessive thirst, headache, dizziness, lightheadedness, drowsiness."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: omeprazole
+      text: "side effects are constipation. diarrhea, gas, excessive thirst, headache, dizziness, lightheadedness"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: patisiran
+      text: "side effects are Blistering, crusting, irritation, itching, or reddening of the skin burning, pain, redness, or swelling at the injection site"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: otezla
+      text: "side effects are diarrhea, headache, nausea, upper respiratory tract infection, vomiting, runny or stuffy nose, abdominal pain"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ozempic
+      text: "side effects are nausea, diarrhea, vomiting, stomach (abdominal) pain, and constipation"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: pantoprazole
+      text: "side effects are Headache, Abdominal pain v, Facial puffiness, Generalized swelling (edema), Chest pain, Diarrhea, Constipation."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: prednisone
+      text: "side effects are headache, dizziness, difficulty falling asleep or staying asleep, inappropriate happiness, changes in personality, bulging eyes"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: tramadol
+      text: "side effects are sleepiness.,headache,nervousness,uncontrollable shaking of a part of the body,muscle tightness,changes in mood,heartburn or indigestion,dry mouth."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: trazodone
+      text: "side effects are nausea,vomiting,diarrhea,constipation,changes in appetite or weight,weakness or tiredness,nervousness,dizziness ."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: viagra
+      text: "side effects are warmth or redness in the face, neck, or chest stuffy nose,headaches,stomach pain,upset stomach,nausea,diarrhea,memory problems."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: wellbutrin
+      text: "side effects are Headache, weight loss, dry mouth, trouble sleeping (insomnia), nausea, dizziness, constipation, fast heartbeat, and sore throat. "
+    - condition:
+        - type: slot
+          name: drug_name
+          value: xanax
+      text: "side effects are Drowsiness,Tiredness,,Dizziness,Sleep problems (insomnia),Memory problems.,Poor balance or coordination,Slurred speech,Trouble concentrating."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: amlodipine
+      text: "side effects are swelling of the hands, feet, ankles, or lower legs,headache,upset stomach,nausea,stomach pain,dizziness or lightheadedness."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: amoxicillin
+      text: "side effects are nausea,vomiting,diarrhea,stomach pain,vaginal itching or discharge,and headache."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ativan
+      text: "side effects are Drowsiness, dizziness, loss of coordination, headache, nausea,and blurred vision."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: benzonatate
+      text: "side effects are nausea,constipation,drowsiness,headache,dizziness,stuffy nose,feeling chilly,burning in the eyes."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: brilinta
+      text: "side effects are bruising,bleeding more easily,nosebleeds,headache,dizziness,cough,nausea,and chest pain."
+    - condition:
+        - type: slot
+          name: drug_name
+          value: paracetamol
+      text: "side effects are low fever with nausea, stomach pain, and loss of appetite, dark urine, clay-colored stools"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: crocin
+      text: "side effects are liver damage, skin rashes, increased heartbeat, low platelets, and low white blood cells"
+    - condition:
+        - type: slot
+          name: drug_name
+          value: ibuprofen
+      text: "side effects are stomach pain, heartburn, nausea, vomiting, gas, constipation, diarrhea"
+
+
+session_config:
+  session_expiration_time: 60   #value in minutes
+  carry_over_slots_to_new_session: true

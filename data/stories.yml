@@ -1,0 +1,2351 @@
+version: "3.1"
+
+stories:
+
+- story: headache 1
+  steps:
+
+  - intent: problem_headache
+  - action: utter_headache_question
+  - intent: problem_headache_tension
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_headache-a
+  - action: utter_headache-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: headache 2
+  steps:
+
+  - intent: problem_headache
+  - action: utter_headache_question
+  - intent: problem_headache_tension
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: headache 3
+  steps:
+
+  - intent: problem_headache
+  - action: utter_headache_question
+  - intent: problem_headache_tension
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: headache 4
+  steps:
+
+  - intent: problem_headache
+  - action: utter_headache_question
+  - intent: problem_headache_tension
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_headache-b
+  - action: utter_headache-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: headache migrain 1
+  steps:
+
+  - intent: problem_headache
+  - action: utter_headache_question
+  - intent: problem_migraine
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_migraine-a
+  - action: utter_migraine-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: headache migraine 2
+  steps:
+
+  - intent: problem_headache
+  - action: utter_headache_question
+  - intent: problem_migraine
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: headache migraine 3
+  steps:
+
+  - intent: problem_headache
+  - action: utter_headache_question
+  - intent: problem_migraine
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: headache migraine 4
+  steps:
+
+  - intent: problem_headache
+  - action: utter_headache_question
+  - intent: problem_migraine
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_migraine-b
+  - action: utter_migraine-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: cough 1
+  steps:
+
+  - intent: problem_cough
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_cough-a
+  - action: utter_cough-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: cough 2
+  steps:
+
+  - intent: problem_cough
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: cough 3
+  steps:
+
+  - intent: problem_cough
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: new
+  steps:
+    - intent: problem_diabetes
+    - action: utter_more
+    - intent: problem_diabetes
+    - action: utter_more
+    - intent: problem_diabetes
+    - action: utter_diabetes-a
+    - action: utter_diabetes-advice
+    - action: utter_anything-else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: cough 4
+  steps:
+
+  - intent: problem_cough
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_cough-b
+  - action: utter_cough-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: nasal-blockage 1
+  steps:
+
+  - intent: problem_nasal-blockage
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_nasal-blockage-a
+  - action: utter_nasal-blockage-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: nasal-blockage 2
+  steps:
+
+  - intent: problem_nasal-blockage
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: nasal-blockage 3
+  steps:
+
+  - intent: problem_nasal-blockage
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: nasal-blockage 4
+  steps:
+
+  - intent: problem_nasal-blockage
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_nasal-blockage-b
+  - action: utter_nasal-blockage-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: allergy 1
+  steps:
+
+  - intent: problem_allergy
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_allergy-a
+  - action: utter_allergy-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: allergy 2
+  steps:
+
+  - intent: problem_allergy
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: allergy 3
+  steps:
+
+  - intent: problem_allergy
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: allergy 4
+  steps:
+
+  - intent: problem_allergy
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_allergy-b
+  - action: utter_allergy-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: anaemia 1
+  steps:
+
+  - intent: problem_anaemia
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_anaemia-a
+  - action: utter_anaemia-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: anaemia 2
+  steps:
+
+  - intent: problem_anaemia
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: anaemia 3
+  steps:
+
+  - intent: problem_anaemia
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: anaemia 4
+  steps:
+
+  - intent: problem_anaemia
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_anaemia-b
+  - action: utter_anaemia-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: arthritis 1
+  steps:
+
+  - intent: problem_arthritis
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_arthritis-a
+  - action: utter_arthritis-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: arthritis 2
+  steps:
+
+  - intent: problem_arthritis
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: arthritis 3
+  steps:
+
+  - intent: problem_arthritis
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: arthritis 4
+  steps:
+
+  - intent: problem_arthritis
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_arthritis-b
+  - action: utter_arthritis-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: bronchial asthma 1
+  steps:
+
+  - intent: problem_bronchial-asthma
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_bronchial-asthma-a
+  - action: utter_bronchial-asthma-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: bronchial asthma 2
+  steps:
+
+  - intent: problem_bronchial-asthma
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: bronchial asthma 3
+  steps:
+
+  - intent: problem_bronchial-asthma
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: bronchial asthma 4
+  steps:
+
+  - intent: problem_bronchial-asthma
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_bronchial-asthma-b
+  - action: utter_bronchial-asthma-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: chickenpox 1
+  steps:
+
+  - intent: problem_chickenpox
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_chickenpox-a
+  - action: utter_chickenpox-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: chickenpox 2
+  steps:
+
+  - intent: problem_chickenpox
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: chickenpox 3
+  steps:
+
+  - intent: problem_chickenpox
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: chickenpox 4
+  steps:
+
+  - intent: problem_chickenpox
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_chickenpox-b
+  - action: utter_chickenpox-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: common cold 1
+  steps:
+
+  - intent: problem_common-cold
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_common-cold-a
+  - action: utter_common-cold-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: common cold 2
+  steps:
+
+  - intent: problem_common-cold
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: common cold 3
+  steps:
+
+  - intent: problem_common-cold
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: common cold 4
+  steps:
+
+  - intent: problem_common-cold
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_common-cold-b
+  - action: utter_common-cold-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: conjunctivits 1
+  steps:
+
+  - intent: problem_conjunctivits
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_conjunctivits-a
+  - action: utter_conjunctivits-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: conjunctivits 2
+  steps:
+
+  - intent: problem_conjunctivits
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: conjunctivits 3
+  steps:
+
+  - intent: problem_conjunctivits
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: conjunctivits 4
+  steps:
+
+  - intent: problem_conjunctivits
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_conjunctivits-b
+  - action: utter_conjunctivits-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: depression 1
+  steps:
+
+  - intent: problem_depression
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_depression-a
+  - action: utter_depression-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: depression 2
+  steps:
+
+  - intent: problem_depression
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: depression 3
+  steps:
+
+  - intent: problem_depression
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: depression 4
+  steps:
+
+  - intent: problem_depression
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_depression-b
+  - action: utter_depression-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ear pain 1
+  steps:
+
+  - intent: problem_ear-pain
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_ear-pain-a
+  - action: utter_ear-pain-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ear pain 2
+  steps:
+
+  - intent: problem_ear-pain
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ear pain 3
+  steps:
+
+  - intent: problem_ear-pain
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ear pain 4
+  steps:
+
+  - intent: problem_ear-pain
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_ear-pain-b
+  - action: utter_ear-pain-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: eye problem 1
+  steps:
+
+  - intent: problem_eye-problem
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_eye-problem-a
+  - action: utter_eye-problem-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: eye problem 2
+  steps:
+
+  - intent: problem_eye-problem
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: eye problem 3
+  steps:
+
+  - intent: problem_eye-problem
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: eye problem 4
+  steps:
+
+  - intent: problem_eye-problem
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_eye-problem-b
+  - action: utter_eye-problem-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fungal infection 1
+  steps:
+
+  - intent: problem_fungal-infection
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_fungal-infection-a
+  - action: utter_fungal-infection-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fungal infection 2
+  steps:
+
+  - intent: problem_fungal-infection
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fungal infection 3
+  steps:
+
+  - intent: problem_fungal-infection
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fungal infection 4
+  steps:
+
+  - intent: problem_fungal-infection
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_fungal-infection-b
+  - action: utter_fungal-infection-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: gerd 1
+  steps:
+
+  - intent: problem_gerd
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_gerd-a
+  - action: utter_gerd-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: gerd 2
+  steps:
+
+  - intent: problem_gerd
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: gerd 3
+  steps:
+
+  - intent: problem_gerd
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: gerd 4
+  steps:
+
+  - intent: problem_gerd
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_gerd-b
+  - action: utter_gerd-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: high blood pressure 1
+  steps:
+
+  - intent: problem_high-blood-pressure
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_high-blood-pressure-a
+  - action: utter_high-blood-pressure-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: high blood pressure 2
+  steps:
+
+  - intent: problem_high-blood-pressure
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: high blood pressure 3
+  steps:
+
+  - intent: problem_high-blood-pressure
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: high blood pressure 4
+  steps:
+
+  - intent: problem_high-blood-pressure
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_high-blood-pressure-b
+  - action: utter_high-blood-pressure-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: insomnia 1
+  steps:
+
+  - intent: problem_insomnia
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_insomnia-a
+  - action: utter_insomnia-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: insomnia 2
+  steps:
+
+  - intent: problem_insomnia
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: insomnia 3
+  steps:
+
+  - intent: problem_insomnia
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: insomnia 4
+  steps:
+
+  - intent: problem_insomnia
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_insomnia-b
+  - action: utter_insomnia-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: low blood pressure 1
+  steps:
+
+  - intent: problem_low-blood-pressure
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_low-blood-pressure-a
+  - action: utter_low-blood-pressure-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: low blood pressure 2
+  steps:
+
+  - intent: problem_low-blood-pressure
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: low blood pressure 3
+  steps:
+
+  - intent: problem_low-blood-pressure
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: low blood pressure 4
+  steps:
+
+  - intent: problem_low-blood-pressure
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_low-blood-pressure-b
+  - action: utter_low-blood-pressure-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: migraine 1
+  steps:
+
+  - intent: problem_migraine
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_migraine-a
+  - action: utter_migraine-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: migraine 2
+  steps:
+
+  - intent: problem_migraine
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: migraine 3
+  steps:
+
+  - intent: problem_migraine
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: migraine 4
+  steps:
+
+  - intent: problem_migraine
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_migraine-b
+  - action: utter_migraine-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: mild heart disease 1
+  steps:
+
+  - intent: problem_mild-heart-disease
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_mild-heart-disease-a
+  - action: utter_mild-heart-disease-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: mild heart disease 2
+  steps:
+
+  - intent: problem_mild-heart-disease
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: mild heart disease 3
+  steps:
+
+  - intent: problem_mild-heart-disease
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: mild heart disease 4
+  steps:
+
+  - intent: problem_mild-heart-disease
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_mild-heart-disease-b
+  - action: utter_mild-heart-disease-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: night blindness 1
+  steps:
+
+  - intent: problem_night-blindness
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_night-blindness-a
+  - action: utter_night-blindness-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: night blindness 2
+  steps:
+  - intent: problem_night-blindness
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: night blindness 3
+  steps:
+
+  - intent: problem_night-blindness
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: night blindness 4
+  steps:
+
+  - intent: problem_night-blindness
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_night-blindness-b
+  - action: utter_night-blindness-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: obesity 1
+  steps:
+
+  - intent: problem_obesity
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_obesity-a
+  - action: utter_obesity-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: obesity 2
+  steps:
+
+  - intent: problem_obesity
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: obesity 3
+  steps:
+
+  - intent: problem_obesity
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: obesity 4
+  steps:
+
+  - intent: problem_obesity
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_obesity-b
+  - action: utter_obesity-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: period cramps 1
+  steps:
+
+  - intent: problem_period-cramps
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_period-cramps-a
+  - action: utter_period-cramps-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: period cramps 2
+  steps:
+
+  - intent: problem_period-cramps
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: period cramps 3
+  steps:
+
+  - intent: problem_period-cramps
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: period cramps 4
+  steps:
+
+  - intent: problem_period-cramps
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_period-cramps-b
+  - action: utter_period-cramps-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: pneumonia 1
+  steps:
+
+  - intent: problem_pneumonia
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_pneumonia-a
+  - action: utter_pneumonia-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: pneumonia 2
+  steps:
+
+  - intent: problem_pneumonia
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: pneumonia 3
+  steps:
+
+  - intent: problem_pneumonia
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: pneumonia 4
+  steps:
+
+  - intent: problem_pneumonia
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_pneumonia-b
+  - action: utter_pneumonia-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: psoriasis 1
+  steps:
+
+  - intent: problem_psoriasis
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_psoriasis-a
+  - action: utter_psoriasis-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: psoriasis 2
+  steps:
+
+  - intent: problem_psoriasis
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: psoriasis 3
+  steps:
+
+  - intent: problem_psoriasis
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: psoriasis 4
+  steps:
+
+  - intent: problem_psoriasis
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_psoriasis-b
+  - action: utter_psoriasis-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: psychosis 1
+  steps:
+
+  - intent: problem_psychosis
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_psychosis-a
+  - action: utter_psychosis-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: psychosis 2
+  steps:
+
+  - intent: problem_psychosis
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: psychosis 3
+  steps:
+
+  - intent: problem_psychosis
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: psychosis 4
+  steps:
+
+  - intent: problem_psychosis
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_psychosis-b
+  - action: utter_psychosis-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ring worm 1
+  steps:
+
+  - intent: problem_ringworm
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_ringworm-a
+  - action: utter_ringworm-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ring worm 2
+  steps:
+
+  - intent: problem_ringworm
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ring worm 3
+  steps:
+
+  - intent: problem_ringworm
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ring worm 4
+  steps:
+
+  - intent: problem_ringworm
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_ringworm-b
+  - action: utter_ringworm-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: tooth ache 1
+  steps:
+
+  - intent: problem_toothache
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_toothache-a
+  - action: utter_toothache-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: tooth ache 2
+  steps:
+
+  - intent: problem_toothache
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: tooth ache 3
+  steps:
+
+  - intent: problem_toothache
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: tooth ache 4
+  steps:
+
+  - intent: problem_toothache
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_toothache-b
+  - action: utter_toothache-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: typhoid 1
+  steps:
+
+  - intent: problem_typhoid
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_typhoid-a
+  - action: utter_typhoid-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: typhoid 2
+  steps:
+
+  - intent: problem_typhoid
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: typhoid 3
+  steps:
+
+  - intent: problem_typhoid
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: typhoid 4
+  steps:
+
+  - intent: problem_typhoid
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_typhoid-b
+  - action: utter_typhoid-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: vit d deficiency 1
+  steps:
+
+  - intent: problem_vit-d-deficiency
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_vit-d-deficiency-a
+  - action: utter_vit-d-deficiency-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: vit d deficiency 2
+  steps:
+
+  - intent: problem_vit-d-deficiency
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: vit d deficiency 3
+  steps:
+
+  - intent: problem_vit-d-deficiency
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: vit d deficiency 4
+  steps:
+
+  - intent: problem_vit-d-deficiency
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_vit-d-deficiency-b
+  - action: utter_vit-d-deficiency-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: weakness 1
+  steps:
+
+  - intent: problem_weakness
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_weakness-a
+  - action: utter_weakness-advice
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: weakness 2
+  steps:
+
+  - intent: problem_weakness
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-above-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: weakness 3
+  steps:
+
+  - intent: problem_weakness
+  - action: utter_ask-duration
+  - intent: long-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_visit-doctor
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: weakness 4
+  steps:
+
+  - intent: problem_weakness
+  - action: utter_ask-duration
+  - intent: small-duration
+  - action: utter_ask-age
+  - intent: age-below-18
+  - action: utter_weakness-b
+  - action: utter_weakness-advice
+
+- story: drug name with slots
+  steps:
+
+  - intent: problem_drug-info
+  - slot_was_set:
+    - drug_name: ibuprofen
+  - action: utter_drug_info
+  - action: utter_drug_usage
+  - action: utter_drug_side_effects
+  - slot_was_set:
+    - drug_name: null
+  - action: utter_anything-else
+  - intent: affirm
+  - action: utter_ask_question
+
+- story: drug info
+  steps:
+  - intent: info_on_drugs
+  - action: utter_ask_about_drug
+  - intent: problem_drug-info
+  - slot_was_set:
+    - drug_name: ibuprofen
+  - action: utter_drug_info
+  - action: utter_drug_usage
+  - action: utter_drug_side_effects
+  - slot_was_set:
+    - drug_name: null
+  - action: utter_anything-else
+
+
+# - story: drug name with no slots
+#   steps:
+
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: null
+#   - action: utter_drug_info
+#   - action: utter_anything-else
+
+# - story: paracetamol
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: paracetamol
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+
+# - story: crocin
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: crocin
+#     - action: utter_drug_info
+#   - action: utter_drug_usage
+#   - action: utter_drug_usage
+
+
+# - story: clonazepam
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: clonazepam
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: copper t
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: copper t
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: mirtazapine
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: mirtazapine
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: chantix
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: chantix
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: ambien
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: ambien
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: actos
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: actos
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: enbrel sureclick
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: enbrel sureclick
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: lexapro
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: lexapro
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: angiox
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: angiox
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: campral
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: campral
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: miconazole
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: miconazole
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: levora
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: levora
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: amitriptyline
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: amitriptyline
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: ciprofloxacin
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: ciprofloxacin
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: nuvigil
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: nuvigil
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: movantik
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: movantik
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: viscodyne-d syrup
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: viscodyne-d syrup
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: kevzara
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: kevzara
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: klonopin
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: klonopin
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: enteragam
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: enteragam
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: oxybutynin
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: oxybutynin
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: zyclara
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: zyclara
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: seroquel
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: seroquel
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: lisinopril
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: lisinopril
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: lofexidine
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: lofexidine
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: loratadine
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: loratadine
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: lyrica
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: lyrica
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: melatonin
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: melatonin
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: meloxicam
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: meloxicam
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: metformin
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: metformin
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: methadone
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: methadone
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: methotrexate
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: methotrexate
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: metoprolol
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#     - drug_name: metoprolol
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: naloxone
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: naloxone
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: naltrexone
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: naltrexone
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: naproxen
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: naproxen
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: omeprazole
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: omeprazole
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: patisiran
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: patisiran
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: otezla
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: otezla
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: ozempic
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: ozempic
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: pantoprazole
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: pantoprazole
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: prednisone
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: prednisone
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: tramadol
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: tramadol
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: trazodone
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: trazodone
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: viagra
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: viagra
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: wellbutrin
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: wellbutrin
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: xanax
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: xanax
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: amlodipine
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: amlodipine
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: amoxicillin
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: amoxicillin
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: ativan
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: ativan
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: benzonatate
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: benzonatate
+#   - action: utter_drug_info
+#   - action: utter_drug_usage
+
+# - story: brilinta
+#     steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: problem_drug-info
+#   - slot_was_set:
+#   - drug_name: brilinta
+#   - action: utter_drug_info
+#   - action: utter_drug_usage

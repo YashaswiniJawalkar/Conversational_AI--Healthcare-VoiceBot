@@ -1,0 +1,96 @@
+version: "3.1"
+
+rules:
+
+- rule: ask to help when user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_select_one
+
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_please_rephrase
+
+- rule: fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+
+- rule: are you a bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: show images if headache
+  steps:
+  - intent: problem_headache
+  - action: utter_headache_question
+
+
+- rule: reply with drug information when slot
+  steps:
+  - intent: problem_drug-info
+  - action: utter_drug_info
+  wait_for_user_input: false
+
+- rule: continuation for drug info 1
+  steps:
+  - action: utter_drug_info
+  - action: utter_drug_usage
+  wait_for_user_input: false
+
+- rule: continuation for drug info 1
+  steps:
+  - action: utter_drug_usage
+  - action: utter_drug_side_effects
+  wait_for_user_input: false
+
+
+- rule: continuation for drug info 2
+  steps:
+  - action: utter_drug_side_effects
+  - action: utter_anything-else
+
+- rule: user want info on drug
+  steps:
+  - intent: info_on_drugs
+  - action: utter_ask_about_drug
+
+- rule: user want symptom checker
+  steps:
+  - intent: describe_symptoms
+  - action: utter_check_symptoms
+
+- rule: want to ask question
+  steps:
+  - intent: want_to_ask_question
+  - action: utter_ask_question
+  - action: utter_select_one
+
+- rule: user wants help
+  steps:
+  - action: utter_anything-else
+  - intent: affirm
+  - action: utter_ask_question
+
+- rule: user doesn't want help
+  steps:
+  - action: utter_anything-else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- rule: user doesn't want help 2
+  steps:
+  - action: utter_anything-else
+  - intent: goodbye
+  - action: utter_goodbye
